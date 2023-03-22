@@ -184,13 +184,13 @@ public class Playermove : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Alpha1))
         {
-            Debug.Log("Agua");
+            Debug.Log("Fuego");
             powerType = 1;
         }
 
         if(Input.GetKeyDown(KeyCode.Alpha4))
         {
-            Debug.Log("Fuego");
+            Debug.Log("Agua");
             powerType = 0;
         }
     }

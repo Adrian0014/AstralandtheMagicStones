@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class AI : MonoBehaviour
 {
-
-
     enum State
     {
         Patrolling,
@@ -13,8 +11,6 @@ public class AI : MonoBehaviour
         Chasing,
         Attacking,
         WaitingAttack,
-
-
     }
     State currentState;
     UnityEngine.AI.NavMeshAgent porcuxAgent;
@@ -31,8 +27,6 @@ public class AI : MonoBehaviour
     private float waitTime;
 
     public float atackTime;
-
-    public float startAttackWaitTime;
     public float attackWaitTime;
 
 
@@ -62,7 +56,7 @@ public class AI : MonoBehaviour
         switch (currentState)
         {
             case State.Patrolling:
-                Patrol();               //
+                Patrol();               
                 break;
             case State.PatrolWait:
                 Wait();
@@ -138,50 +132,20 @@ public class AI : MonoBehaviour
     void Attack()
     {
         porcuxAgent.destination = player.position;
-        
-
-
-        if (this.gameObject.tag == "PorcuxPlanta")
-        {
-            powerType = 3;
-        }
-
-        if (this.gameObject.tag == "PorcuxFuego")
-        {
-            powerType = 2;
-        }
-
-        if (atackTime <= 0 && this.gameObject.tag == "PorcuxPlanta")
+        if (atackTime <= 0)
         {
             anim.SetBool("Atack", true);
-            Debug.Log("Patada en la boca");
             atackTime = 1;
             GameObject AIPlantBall = PoolManager.Instance.GetPooledPower(powerType, AibulletSpawn.position, AibulletSpawn.rotation);
             AIPlantBall.SetActive(true);
-            //Instantiate(AIPlantbullet, AibulletSpawn.position, AibulletSpawn.rotation);
             currentState = State.WaitingAttack;
 
         }
-
-        if (atackTime <= 0 && this.gameObject.tag == "PorcuxFuego")
-        {
-            anim.SetBool("Atack", true);
-            Debug.Log("Patada en la boca");
-            atackTime = 1;
-            GameObject AIFireBall = PoolManager.Instance.GetPooledPower(powerType, AibulletSpawn.position, AibulletSpawn.rotation);
-            AIFireBall.SetActive(true);
-
-            //Instantiate(AIFirebullet, AibulletSpawn.position, AibulletSpawn.rotation);
-            currentState = State.WaitingAttack;
-
-        }
-
         else
         {
             atackTime -= Time.deltaTime;
             anim.SetBool("Atack", false);
         }
-
         if (Vector3.Distance(transform.position, player.position) > attackRange)
         {
             currentState = State.Chasing;

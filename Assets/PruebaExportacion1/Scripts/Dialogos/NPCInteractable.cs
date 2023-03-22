@@ -104,7 +104,7 @@ public class NPCInteractable : MonoBehaviour
         dialoguePanel.SetActive(true);
         camaraNPC.SetActive(true);
         lineIndex = 0;
-        Global.PlayerScript = true;
+        //Global.PlayerScript = true;
         animNPC.SetBool("Charla", true);
         Time.timeScale = 0;
         StartCoroutine(ShowLine());

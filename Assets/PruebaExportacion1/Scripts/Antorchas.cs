@@ -42,4 +42,11 @@ public class Antorchas : MonoBehaviour
         }
     }
     
+
+    void Congelacion()
+    {
+
+
+
+    }
 }

@@ -60,15 +60,6 @@ public class GameManager : MonoBehaviour
             puntoApuntando.SetActive(false);
         }      
     }
-
-    public void Activacion()
-    {
-        DoorRigg.AddForce(0, 50, 0);
-        Puerta.GetComponent<Collider>().enabled = false;
-        Destroy(Puerta, 4f);
-        Debug.Log("Activa");
-        
-    }
     
     public void Impacto()
     {
