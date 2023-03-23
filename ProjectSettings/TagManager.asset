@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Mojado
+  - AI
+  - Caliente
+  - Antorcha
+  - NPC
+  - PorcuxFuego
+  - Jugador
   layers:
   - Default
   - TransparentFX
