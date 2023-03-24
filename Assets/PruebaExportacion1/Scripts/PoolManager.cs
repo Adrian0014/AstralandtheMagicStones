@@ -19,9 +19,7 @@ public class PoolManager : MonoBehaviour
     }
 
     public List<Pool> powerList;
-
-    public List<Pool> enemyPowerList;
-
+    
     public static PoolManager Instance;
 
     void Awake()
