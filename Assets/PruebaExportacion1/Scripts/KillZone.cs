@@ -13,6 +13,7 @@ public class KillZone : MonoBehaviour
         {
             Debug.Log("Activa");
             other.gameObject.transform.position = respawnPoint.position;
+            GameManager.Instance.Impacto();
         }
     }
 }

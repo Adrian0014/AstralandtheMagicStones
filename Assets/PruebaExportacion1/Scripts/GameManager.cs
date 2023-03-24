@@ -12,10 +12,6 @@ public class GameManager : MonoBehaviour
 
     public GameObject CorrientesAgua;
 
-    public GameObject Puerta;
-
-    private Rigidbody DoorRigg;
-
     public GameObject puntoApuntando;    
 
 
@@ -29,11 +25,6 @@ public class GameManager : MonoBehaviour
         {
             Instance = this;
         }
-    }
-
-    void Start()
-    {
-        DoorRigg = Puerta.GetComponent<Rigidbody>();
     }
 
     void Update() 
@@ -68,30 +59,32 @@ public class GameManager : MonoBehaviour
         if(Global.vidas == 0)
         {
             puntosVidas[0].SetActive(false);
+            puntosVidas[1].SetActive(false);
+            puntosVidas[2].SetActive(false);
         }
 
 
         if(Global.vidas == 1)
         {
+            puntosVidas[0].SetActive(true);
             puntosVidas[1].SetActive(false);
+            puntosVidas[2].SetActive(false);
 
         }
 
         if(Global.vidas == 2)
         {
+            puntosVidas[0].SetActive(true);
+            puntosVidas[1].SetActive(true);
             puntosVidas[2].SetActive(false);
 
         }
-
-        if (Global.vidas == 3)
+        
+        if(Global.vidas == 3)
         {
-            puntosVidas[3].SetActive(false);
-
-        }
-
-        if (Global.vidas == 4)
-        {
-            puntosVidas[4].SetActive(false);
+            puntosVidas[0].SetActive(true);
+            puntosVidas[1].SetActive(true);
+            puntosVidas[2].SetActive(true);
 
         }
     }
