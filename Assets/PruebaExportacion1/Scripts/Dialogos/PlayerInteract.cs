@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerInteract : MonoBehaviour
 {
@@ -21,6 +22,11 @@ public class PlayerInteract : MonoBehaviour
                 {
                     Debug.Log("Entrar a casa1");
                     npcInteractable.EntrarCasa1();
+                }
+                    if(collider.gameObject.CompareTag("PuertaFinal"))
+                {
+                    Debug.Log("Fianl");
+                    SceneManager.LoadScene(2);
                 }
             }
         }

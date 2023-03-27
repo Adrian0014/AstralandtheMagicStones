@@ -11,6 +11,8 @@ TagManager:
   - NPC
   - PorcuxFuego
   - Jugador
+  - PorcuxPlanta
+  - PuertaFinal
   layers:
   - Default
   - TransparentFX

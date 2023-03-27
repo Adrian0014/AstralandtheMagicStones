@@ -9,7 +9,12 @@ ModelImporter:
   - first:
       74: 4419341551624498096
     second: Armature|ArmatureAction.003
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PorcuxTExture
+    second: {fileID: 2100000, guid: 06943eaff786a254895e35fb631fa775, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

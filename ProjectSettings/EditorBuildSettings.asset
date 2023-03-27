@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/OutdoorsScene.unity
     guid: 8124e5870f4fd4c779e7a5f994e84ad1
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 88932b6b28ed2f24b9f3a6e926950e3f
+  - enabled: 1
+    path: Assets/Scenes/FireStone.unity
+    guid: 6738c5f2b1bfff746900d58f9d1bff3b
   m_configObjects: {}
