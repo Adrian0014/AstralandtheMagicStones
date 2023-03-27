@@ -9,10 +9,12 @@ public class NPCInteractable : MonoBehaviour
 {
     //public Textos texto;
     [SerializeField] private GameObject dialoguePanel;
-    [SerializeField] private TMP_Text dialogueText; 
+    [SerializeField] private TMP_Text dialogueText;
+    [SerializeField] private TMP_Text nameText; 
     [SerializeField] private GameObject camaraNPC;
     [SerializeField] private float unScaledTime;
     [SerializeField, TextArea(4,6)]private string[] dialogueLines;
+    [SerializeField, TextArea(4,6)]private string[] nameLines;
    
 
     private bool didDialogueStart;
@@ -20,58 +22,7 @@ public class NPCInteractable : MonoBehaviour
     private float typingTime = 0.05f;
 
     private Animator animNPC;
-    /*enum State
-    {
-        Talking1,
-        Talking2,
-    }
-    State currentState;
-    NavMeshAgent agent;
 
-    void Awake()
-    {
-        agent = GetComponent<NavMeshAgent>();
-    }
-
-    void Start()
-    {
-        currentState = State.Talking1;
-
-    }
-    
-    void Update()
-    {
-        switch(currentState)
-        {
-            case State.Talking1:
-                Talk1();
-            break;
-
-            case State.Talking2:
-                Talk2();
-            break;
-            
-        }
-        
-        
-    }
-
-    void Talk1()
-    {
-        if(Input.GetKeyDown(KeyCode.R))
-        {
-            Debug.Log("Talk1");
-            currentState = State.Talking2;
-        }
-
-
-    }
-    void Talk2()
-    {
-        Debug.Log("Talk2");
-    animNPC.SetBool("Charla", true);
-        
-    }*/
     void Awake()
     {
         animNPC = GetComponent<Animator>();
@@ -92,10 +43,6 @@ public class NPCInteractable : MonoBehaviour
             StopAllCoroutines();
             dialogueText.text = dialogueLines[lineIndex];
         }
-        //Debug.Log("Interact!");
-        //StartDialogue();
-        //FindObjectOfType<ControlDialogos>().ActivarCartel(texto);
-        
     }
 
     private void StartDialogue()
@@ -104,8 +51,8 @@ public class NPCInteractable : MonoBehaviour
         dialoguePanel.SetActive(true);
         camaraNPC.SetActive(true);
         lineIndex = 0;
-        //Global.PlayerScript = true;
         animNPC.SetBool("Charla", true);
+        nameText.text = nameLines[lineIndex];
         Time.timeScale = 0;
         StartCoroutine(ShowLine());
     }
@@ -143,12 +90,4 @@ public class NPCInteractable : MonoBehaviour
         Debug.Log("Entrar a casa");
         SceneManager.LoadScene(1);
     }
-
-    /*
-        private void TimeChat()
-        {
-        unScaledTime = Time.fixedUnscaledDeltaTime;
-        }    
-     */
-
 }
