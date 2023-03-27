@@ -16,7 +16,9 @@ public class GameManager : MonoBehaviour
 
     public GameObject CorrientesAgua;
 
-    public GameObject puntoApuntando;    
+    public GameObject puntoApuntando;  
+    
+    public GameObject jugador;
 
 
     void Awake() 
@@ -57,7 +59,18 @@ public class GameManager : MonoBehaviour
         else
         {
             puntoApuntando.SetActive(false);
+        }
+/*
+        if (Global.PlayerScript = true)
+        {
+            jugador.SetActive(false);
+            
+        }
+        else
+        {
+            jugador.SetActive(true);
         }      
+        */
     }
     
     public void Impacto()

@@ -54,6 +54,7 @@ public class NPCInteractable : MonoBehaviour
         animNPC.SetBool("Charla", true);
         nameText.text = nameLines[lineIndex];
         Time.timeScale = 0;
+        Global.PlayerScript = true;
         StartCoroutine(ShowLine());
     }
 

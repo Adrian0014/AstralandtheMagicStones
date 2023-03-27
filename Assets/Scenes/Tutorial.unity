@@ -41373,6 +41373,11 @@ PrefabInstance:
       objectReference: {fileID: 3311000174945662776}
     - target: {fileID: 8986640232840374536, guid: f3a2c02ed0ce2d748a49500e6f4cab95,
         type: 3}
+      propertyPath: jugador
+      value: 
+      objectReference: {fileID: 1278598400}
+    - target: {fileID: 8986640232840374536, guid: f3a2c02ed0ce2d748a49500e6f4cab95,
+        type: 3}
       propertyPath: IconoAgua
       value: 
       objectReference: {fileID: 1478898996}
