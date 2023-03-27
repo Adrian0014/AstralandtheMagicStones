@@ -8,6 +8,10 @@ public class GameManager : MonoBehaviour
 
     public GameObject[] puntosVidas;
 
+    public GameObject IconoAgua;
+
+    public GameObject IconoFuego;
+
     public static GameManager Instance;
 
     public GameObject CorrientesAgua;
@@ -33,6 +37,8 @@ public class GameManager : MonoBehaviour
         {
 
             CorrientesAgua.GetComponent<Collider>().enabled = false;
+            IconoFuego.SetActive(true);
+            IconoAgua.SetActive(false);
         }
 
 
@@ -40,6 +46,8 @@ public class GameManager : MonoBehaviour
         {
 
             CorrientesAgua.GetComponent<Collider>().enabled = true;
+            IconoAgua.SetActive(true);
+            IconoFuego.SetActive(false);
         }
                 
         if(Input.GetButton("Fire2"))
