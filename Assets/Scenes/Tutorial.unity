@@ -93282,22 +93282,51 @@ PrefabInstance:
     - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
         type: 3}
       propertyPath: nameLines.Array.data[0]
-      value: Porcux Aire
+      value: Porcux de Aire
+      objectReference: {fileID: 0}
+    - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
+        type: 3}
+      propertyPath: nameLines.Array.data[1]
+      value: "Para resumir:\r\nFuego\tvence\tTierra\r\nTierra\tvence\tAgua\r\nAgua
+        \tvence    Fuego\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
+        type: 3}
+      propertyPath: nameLines.Array.data[2]
+      value: "Okey una vez que abras la puerta tendr\xE1s que derrotar a 2 Porcux
+        de Tierra.Cuando los derrotes podr\xE1s abrir la puerta que se encuentra
+        al final de la habitaci\xF3n.\r\nSuerte aventurero.\r"
       objectReference: {fileID: 0}
     - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
         type: 3}
       propertyPath: dialogueLines.Array.size
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
         type: 3}
       propertyPath: dialogueLines.Array.data[0]
-      value: 'Pode de fuego vence a tierra
-
-        Tierra a agua
-
-        Agua vence
-        a fuego'
+      value: Genial has llegado,ahora es turno de hablar de los enemigos de este
+        mundo. En este Astral existen los Porcux, monstruos que representan los elementos.
+        Esos elementos son Fuego,Tierra,Agua y Aire.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
+        type: 3}
+      propertyPath: dialogueLines.Array.data[1]
+      value: "No te preocupes nosotros no somos agresivos.Para derrotar a un tipo
+        de Porcux ser\xE1 necesario utilizar el poder en concreto."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
+        type: 3}
+      propertyPath: dialogueLines.Array.data[2]
+      value: "Para resumir:\r\nFuego    vence\tTierra\r\nTierra    vence\tAgua\r\nAgua     
+        vence\tFuego\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
+        type: 3}
+      propertyPath: dialogueLines.Array.data[3]
+      value: "Okey una vez que abras la puerta tendr\xE1s que derrotar a 2 Porcux
+        de Tierra.Cuando los derrotes podr\xE1s abrir la puerta que se encuentra
+        al final de la habitaci\xF3n.\r\nSuerte aventurero.\r"
       objectReference: {fileID: 0}
     - target: {fileID: 4492212144857737918, guid: b1c7b83cd0ff61441804e496691da026,
         type: 3}
@@ -105451,17 +105480,33 @@ PrefabInstance:
     - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
         type: 3}
       propertyPath: nameLines.Array.data[0]
-      value: Porcux Aire
+      value: Porcux de Aire
       objectReference: {fileID: 0}
     - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
         type: 3}
       propertyPath: dialogueLines.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
         type: 3}
       propertyPath: dialogueLines.Array.data[0]
-      value: Con el click disparas flechas moverte y espacio para saltar
+      value: "Hola viajero, te doy la bienvenida a la mazmorra del novato.\r\nComo
+        veo que no eres de aqu\xED te explicar\xE9 lo b\xE1sico.Para empezar con
+        las teclas(AWSD) podr\xE1s moverte con tu personaje y con la tecla (ESPACIO)
+        podr\xE1s realizar salto.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
+        type: 3}
+      propertyPath: dialogueLines.Array.data[1]
+      value: "Ahora te explicar\xE9 los poderes.Para empezar con los n\xFAmeros podr\xE1s
+        cambiar de poderes(1 y el 4). Con el Click Derecho podr\xE1s cambiar a la
+        c\xE1mara de apuntado y con el Click Izquierdo podr\xE1s disparar."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
+        type: 3}
+      propertyPath: dialogueLines.Array.data[2]
+      value: Okey vamos a ver si lo has entendido,intentar encender esa antorcha
+        con el poder de fuego.
       objectReference: {fileID: 0}
     - target: {fileID: 6990198408484221652, guid: b1c7b83cd0ff61441804e496691da026,
         type: 3}
@@ -106208,7 +106253,7 @@ PrefabInstance:
     - target: {fileID: 1924799185060217767, guid: 5e4be7aa8f7336345be4f39f9c2ee934,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.25
+      value: 8.39
       objectReference: {fileID: 0}
     - target: {fileID: 1924799185060217767, guid: 5e4be7aa8f7336345be4f39f9c2ee934,
         type: 3}
@@ -106218,7 +106263,7 @@ PrefabInstance:
     - target: {fileID: 1924799185060217767, guid: 5e4be7aa8f7336345be4f39f9c2ee934,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 30.19
+      value: 8.77
       objectReference: {fileID: 0}
     - target: {fileID: 1924799185060217767, guid: 5e4be7aa8f7336345be4f39f9c2ee934,
         type: 3}
@@ -112426,7 +112471,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7090274768396369265}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 21.3, y: 1.4909999, z: -100.369995}
+  m_LocalPosition: {x: 13.440001, y: 1.4909999, z: -121.78999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -112493,7 +112538,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7090274768425060573}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 21.3, y: 1.4909999, z: -100.369995}
+  m_LocalPosition: {x: 13.440001, y: 1.4909999, z: -121.78999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
