@@ -60,17 +60,6 @@ public class GameManager : MonoBehaviour
         {
             puntoApuntando.SetActive(false);
         }
-/*
-        if (Global.PlayerScript = true)
-        {
-            jugador.SetActive(false);
-            
-        }
-        else
-        {
-            jugador.SetActive(true);
-        }      
-        */
     }
     
     public void Impacto()
