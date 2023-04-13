@@ -11,9 +11,18 @@ public class Cinematic : MonoBehaviour
     {
         cinematicTime += Time.deltaTime;
 
+        if (Input.GetKeyDown(KeyCode.Escape) && cinematicPart == 1)
+        {
+            SceneManager.LoadScene(3);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape) && cinematicPart == 2)
+        {
+            SceneManager.LoadScene(5);
+        }
+
         if(cinematicTime > 5f)
         {
-            
             if(cinematicPart == 1)
             {
                 SceneManager.LoadScene(3);
@@ -22,9 +31,7 @@ public class Cinematic : MonoBehaviour
             {
                 Debug.Log("Fianl");
                 SceneManager.LoadScene(5);
-            }
-            
-            
+            }  
         }
     }
 }
