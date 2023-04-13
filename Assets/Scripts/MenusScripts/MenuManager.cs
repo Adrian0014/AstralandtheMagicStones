@@ -95,7 +95,7 @@ public class MenuManager : MonoBehaviour
 
     public void LoadScene()
     {
-        SceneManager.LoadScene("Tutorial");
+        SceneManager.LoadScene("CinematicaPart1");
     }
 
     public void ExitGame()

@@ -26,7 +26,7 @@ public class PlayerInteract : MonoBehaviour
                     if(collider.gameObject.CompareTag("PuertaFinal"))
                 {
                     Debug.Log("Fianl");
-                    SceneManager.LoadScene(2);
+                    SceneManager.LoadScene(4);
                 }
             }
         }
