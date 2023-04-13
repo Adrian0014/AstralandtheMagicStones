@@ -11,7 +11,13 @@ public class MenuManager : MonoBehaviour
     public GameObject optionsMenu;
     public GameObject creditsMenu;
 
-
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            OpenMainMenu();
+        }
+    }
     public void OpenMainMenu()
     {
         menuStart.SetActive(false);
