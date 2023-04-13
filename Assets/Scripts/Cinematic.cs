@@ -20,7 +20,7 @@ public class Cinematic : MonoBehaviour
         {
             SceneManager.LoadScene(5);
         }
-
+        /*
         if(cinematicTime > 5f)
         {
             if(cinematicPart == 1)
@@ -32,6 +32,18 @@ public class Cinematic : MonoBehaviour
                 Debug.Log("Fianl");
                 SceneManager.LoadScene(5);
             }  
+        }
+        */
+        if(cinematicTime > 59f && cinematicPart == 1)
+        {
+            SceneManager.LoadScene(3);
+ 
+        }
+        if(cinematicTime > 17f && cinematicPart == 2)
+        {
+
+            SceneManager.LoadScene(5);
+        
         }
     }
 }
