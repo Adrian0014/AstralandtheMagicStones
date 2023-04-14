@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Playermove : MonoBehaviour
 {
@@ -72,9 +73,6 @@ public class Playermove : MonoBehaviour
         {
             anim.SetBool("Charla", false);
         }
-     
-
-
     }
     void Movimiento()
     {
@@ -203,5 +201,15 @@ public class Playermove : MonoBehaviour
             GameManager.Instance.Impacto();
         }
 
+    }
+    void Muerte()
+    {
+        if(Global.vidas > 0)
+        {
+            Global.nivel = PlayerPrefs.GetInt("LevelMax");
+            SceneManager.LoadScene(Global.nivel);
+            Global.vidas = 3;
+
+        }
     }    
 }

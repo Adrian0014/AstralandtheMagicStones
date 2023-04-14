@@ -26,7 +26,9 @@ public class PlayerInteract : MonoBehaviour
                     if(collider.gameObject.CompareTag("PuertaFinal"))
                 {
                     Debug.Log("Fianl");
-                    SceneManager.LoadScene(4);
+                    SceneManager.LoadScene(3);
+                    Global.nivel = 3;
+                    PlayerPrefs.SetInt("LevelMax",Global.nivel);
                 }
             }
         }

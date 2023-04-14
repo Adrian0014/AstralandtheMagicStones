@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
@@ -10,6 +11,7 @@ public class MenuManager : MonoBehaviour
     public GameObject profileMenu;
     public GameObject optionsMenu;
     public GameObject creditsMenu;
+    public Button playButton;
 
     void Update()
     {
@@ -25,6 +27,7 @@ public class MenuManager : MonoBehaviour
         profileMenu.SetActive(false);
         optionsMenu.SetActive(false);
         creditsMenu.SetActive(false);
+        playButton.Select();
 
     }
 
@@ -104,6 +107,17 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene("CinematicaPart1");
     }
 
+    public void ContinueGame()
+    {
+        Global.nivel = PlayerPrefs.GetInt("LevelMax");
+        SceneManager.LoadScene(Global.nivel);
+    }
+    public void NewGame()
+    {
+        Global.nivel = 1;
+        SceneManager.LoadScene(Global.nivel);
+        PlayerPrefs.SetInt("LevelMax",Global.nivel);
+    }
     public void ExitGame()
     {
         Application.Quit();
