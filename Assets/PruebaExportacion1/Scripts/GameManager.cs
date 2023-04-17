@@ -72,7 +72,7 @@ public class GameManager : MonoBehaviour
             puntosVidas[0].SetActive(false);
             puntosVidas[1].SetActive(false);
             puntosVidas[2].SetActive(false);
-                        Global.nivel = PlayerPrefs.GetInt("LevelMax");
+            Global.nivel = PlayerPrefs.GetInt("LevelMax");
             SceneManager.LoadScene(Global.nivel);
             Global.vidas = 3;
         }

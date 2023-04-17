@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerInteract : MonoBehaviour
 {
+    [SerializeField] private GameObject intercativeObject;
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
@@ -33,6 +34,15 @@ public class PlayerInteract : MonoBehaviour
             }
         }
         
+        if (GetInteractableObject() != null)
+        {
+            Show();
+        }
+        else
+        {
+            Hide();
+        }
+
     }
 
     public NPCInteractable GetInteractableObject()
@@ -50,22 +60,19 @@ public class PlayerInteract : MonoBehaviour
         return null;
         
     }
-    /*public NPCCasa GetInteractableObject()
+    private void Show()
     {
-        float interactRange = 2f;
-        Collider[] colliderArray = Physics.OverlapSphere (transform.position, interactRange);
-        foreach (Collider collider in colliderArray)
-        {
-            
-            if(collider.TryGetComponent(out NPCCasa npcCasa) && collider.gameObject.CompareTag("Casa1"))
-            {
-                return npcCasa;
-            }
-    
+        intercativeObject.SetActive(true);
+    }
 
-        }
-        return null;
-        
-    }*/
-    
+    private void Hide()
+    {
+        intercativeObject.SetActive(false);
+    }
+
+
+
+
+
 }
+
