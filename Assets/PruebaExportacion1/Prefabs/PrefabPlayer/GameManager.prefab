@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8986640232840374537}
   - component: {fileID: 8986640232840374536}
+  - component: {fileID: 3203636131610651460}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -48,6 +49,21 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  IconoAgua: {fileID: 0}
+  IconoFuego: {fileID: 0}
   CorrientesAgua: {fileID: 0}
-  Puerta: {fileID: 0}
   puntoApuntando: {fileID: 0}
+  jugador: {fileID: 0}
+--- !u!114 &3203636131610651460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8986640232840374539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cfd7281967a92744bfb33a33694ec97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 0}
