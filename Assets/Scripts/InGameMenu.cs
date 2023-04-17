@@ -21,19 +21,22 @@ public class InGameMenu : MonoBehaviour
         }
     }
 
-    void ContinuePlay()
+    public void ContinuePlay()
     {
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
         enPausa = false;
         Global.PlayerScript = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
-    void Pause()
+    public void Pause()
     {
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
         enPausa = true;
         Global.PlayerScript = true;
+        Cursor.lockState = CursorLockMode.Confined;
+
     }
 }
