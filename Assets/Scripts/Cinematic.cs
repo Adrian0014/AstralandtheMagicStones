@@ -9,7 +9,8 @@ public class Cinematic : MonoBehaviour
     [SerializeField] private float cinematicPart;
     void Update()
     {
-        if(cinematicTime > 59f && cinematicPart == 1 || Input.GetKeyDown(KeyCode.Escape) && cinematicPart == 1)
+        cinematicTime += Time.deltaTime;
+        if (cinematicTime > 59f && cinematicPart == 1 || Input.GetKeyDown(KeyCode.Escape) && cinematicPart == 1)
         {
             SceneManager.LoadScene(2);
             Global.nivel = 2;
