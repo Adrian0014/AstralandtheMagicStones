@@ -47204,23 +47204,24 @@ PrefabInstance:
     - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
         type: 3}
       propertyPath: dialogueLines.Array.data[0]
-      value: "Hola viajero, te doy la bienvenida a la mazmorra del novato.\r\nComo
-        veo que no eres de aqu\xED te explicar\xE9 lo b\xE1sico.Para empezar con
-        las teclas(AWSD) podr\xE1s moverte con tu personaje y con la tecla (ESPACIO)
-        podr\xE1s realizar salto.\r"
+      value: Hello traveler, welcome to the newbie dungeon. As I can see you're not
+        from here so let me explain to you the basics. You can move your character
+        using the W, A, S, D keys, and jump using the SPACE key. To be able to interact
+        with anything you come across on your adventure, you need to do it by pressing
+        the E key.
       objectReference: {fileID: 0}
     - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
         type: 3}
       propertyPath: dialogueLines.Array.data[1]
-      value: "Ahora te explicar\xE9 los poderes.Para empezar con los n\xFAmeros podr\xE1s
-        cambiar de poderes(1 y el 4). Con el Click Derecho podr\xE1s cambiar a la
-        c\xE1mara de apuntado y con el Click Izquierdo podr\xE1s disparar."
+      value: Now let me explain how the powers work. You can switch between powers
+        using the Number keys (1 for Fire, 4 for Water), aim with the Right-Click,
+        and shoot using the Left-Click.
       objectReference: {fileID: 0}
     - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
         type: 3}
       propertyPath: dialogueLines.Array.data[2]
-      value: Okey vamos a ver si lo has entendido,intentar encender esa antorcha
-        con el poder de fuego.
+      value: Okay, let's check if I understood correctly. Try lighting that torch
+        using the power of Fire.
       objectReference: {fileID: 0}
     - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
         type: 3}
@@ -99186,8 +99187,9 @@ PrefabInstance:
     - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
         type: 3}
       propertyPath: nameLines.Array.data[1]
-      value: "Para resumir:\r\nFuego\tvence\tTierra\r\nTierra\tvence\tAgua\r\nAgua
-        \tvence    Fuego\r"
+      value: 'paca
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
         type: 3}
@@ -99204,28 +99206,28 @@ PrefabInstance:
     - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
         type: 3}
       propertyPath: dialogueLines.Array.data[0]
-      value: Genial has llegado,ahora es turno de hablar de los enemigos de este
-        mundo. En este Astral existen los Porcux, monstruos que representan los elementos.
-        Esos elementos son Fuego,Tierra,Agua y Aire.
+      value: Great,you made it! Now it's time to talk about the enemies in this world.
+        Astral is filled with Porcux, monsters that are made up of the 4 elements
+        Fire, Earth, Water, and Air.
       objectReference: {fileID: 0}
     - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
         type: 3}
       propertyPath: dialogueLines.Array.data[1]
-      value: "No te preocupes nosotros no somos agresivos.Para derrotar a un tipo
-        de Porcux ser\xE1 necesario utilizar el poder en concreto."
+      value: I am an Air Porcux, but don't worry, we are not aggressive.You may wonder
+        how to defeat Fire, Water, and Earth Porcux, but it's very simple.
       objectReference: {fileID: 0}
     - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
         type: 3}
       propertyPath: dialogueLines.Array.data[2]
-      value: "Para resumir:\r\nFuego    vence\tTierra\r\nTierra    vence\tAgua\r\nAgua     
-        vence\tFuego\r"
+      value: "Fire beats Earth \r\nEarth beats Water\r\nWater beats Fire\nYes, it's
+        that simple!"
       objectReference: {fileID: 0}
     - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
         type: 3}
       propertyPath: dialogueLines.Array.data[3]
-      value: "Okey una vez que abras la puerta tendr\xE1s que derrotar a 2 Porcux
-        de Tierra.Cuando los derrotes podr\xE1s abrir la puerta que se encuentra
-        al final de la habitaci\xF3n.\r\nSuerte aventurero.\r"
+      value: "Good traveler, I see that you have understood everything I have explained
+        to you. Now, you must continue your adventure alone. You know how to unlock
+        this door... \r\nGood luck!\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 4492212144857737918, guid: b1c7b83cd0ff61441804e496691da026,
         type: 3}
@@ -112206,7 +112208,7 @@ PrefabInstance:
     - target: {fileID: 1924799185060217767, guid: 5e4be7aa8f7336345be4f39f9c2ee934,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.309
+      value: 9.757
       objectReference: {fileID: 0}
     - target: {fileID: 1924799185060217767, guid: 5e4be7aa8f7336345be4f39f9c2ee934,
         type: 3}
@@ -112216,7 +112218,7 @@ PrefabInstance:
     - target: {fileID: 1924799185060217767, guid: 5e4be7aa8f7336345be4f39f9c2ee934,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.085
+      value: 8.417
       objectReference: {fileID: 0}
     - target: {fileID: 1924799185060217767, guid: 5e4be7aa8f7336345be4f39f9c2ee934,
         type: 3}
@@ -118469,7 +118471,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7090274768396369265}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.4989996, y: 1.795, z: -138.645}
+  m_LocalPosition: {x: 15.947, y: 1.795, z: -126.143}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -118536,7 +118538,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7090274768425060573}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.4989996, y: 1.795, z: -138.645}
+  m_LocalPosition: {x: 15.947, y: 1.795, z: -126.143}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
