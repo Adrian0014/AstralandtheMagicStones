@@ -16,6 +16,7 @@ public class NPCInteractable : MonoBehaviour
     [SerializeField, TextArea(4,6)]private string[] dialogueLines;
     [SerializeField, TextArea(4,6)]private string[] nameLines;
     [SerializeField, TextArea(4,6)]private string[] secondDialogue;
+    public Transform respawnPoint;
    
 
     private bool didDialogueStart;
@@ -76,6 +77,7 @@ public class NPCInteractable : MonoBehaviour
             Time.timeScale = 1;
             if(this.gameObject.layer == 6)
             {
+                this.gameObject.transform.position = respawnPoint.position;
                 for (int i = 0; i <= dialogueLines[i].Length; i++) 
                 {
                     dialogueLines[i] = secondDialogue[i];
