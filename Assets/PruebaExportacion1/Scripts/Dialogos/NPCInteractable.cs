@@ -15,6 +15,7 @@ public class NPCInteractable : MonoBehaviour
     [SerializeField] private float unScaledTime;
     [SerializeField, TextArea(4,6)]private string[] dialogueLines;
     [SerializeField, TextArea(4,6)]private string[] nameLines;
+    [SerializeField, TextArea(4,6)]private string[] secondDialogue;
    
 
     private bool didDialogueStart;
@@ -73,6 +74,14 @@ public class NPCInteractable : MonoBehaviour
             Global.PlayerScript = false;
             animNPC.SetBool("Charla", false);
             Time.timeScale = 1;
+            if(this.gameObject.layer == 6)
+            {
+                for (int i = 0; i <= dialogueLines[i].Length; i++) 
+                {
+                    dialogueLines[i] = secondDialogue[i];
+                }
+            }
+            
         }
     }
 
