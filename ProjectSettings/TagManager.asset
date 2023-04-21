@@ -13,6 +13,7 @@ TagManager:
   - Jugador
   - PorcuxPlanta
   - PuertaFinal
+  - Casa
   layers:
   - Default
   - TransparentFX
