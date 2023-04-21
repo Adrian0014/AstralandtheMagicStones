@@ -19,10 +19,10 @@ public class PlayerInteract : MonoBehaviour
                     npcInteractable.Interact();
                 }
 
-                if(collider.gameObject.CompareTag("Casa1"))
+                if(collider.gameObject.CompareTag("Casa"))
                 {
-                    Debug.Log("Entrar a casa1");
-                    npcInteractable.EntrarCasa1();
+                    //npcInteractable.EntrarCasa();
+                    Debug.Log("Entrar a casa");
                 }
                     if(collider.gameObject.CompareTag("PuertaFinal"))
                 {

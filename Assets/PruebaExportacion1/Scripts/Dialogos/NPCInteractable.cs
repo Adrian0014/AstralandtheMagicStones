@@ -98,9 +98,9 @@ public class NPCInteractable : MonoBehaviour
         }
     }
 
-    public void EntrarCasa1()
+    /*public void EntrarCasa()
     {
         Debug.Log("Entrar a casa");
-        SceneManager.LoadScene(1);
-    }
+        
+    }*/
 }
