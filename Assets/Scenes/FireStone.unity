@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2613.0742, g: 2647.4648, b: 3752.5625, a: 1}
+  m_IndirectSpecularColor: {r: 2610.1143, g: 2681.4082, b: 3915.9062, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -513,12 +513,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4579454407841743219, guid: a1c22312611ddfe41b457cf5c3fa2be9, type: 3}
---- !u!1 &155657147 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3426671418701752754, guid: b55fef30ca7bebb459174f5c1d49e340,
-    type: 3}
-  m_PrefabInstance: {fileID: 818152294}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &155657148 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3426671418701752765, guid: b55fef30ca7bebb459174f5c1d49e340,
@@ -1072,6 +1066,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 47.701225, y: 9.558127, z: 2.567345}
   m_Center: {x: -0.20730877, y: -1.46514, z: 0.27597797}
+--- !u!1 &421329110 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8652103638523820231, guid: 04e83638a477c9d40a1c7b216bc47e8b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1192670330}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &432432459
 GameObject:
   m_ObjectHideFlags: 0
@@ -3141,6 +3141,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6562549139885820515, guid: 04e83638a477c9d40a1c7b216bc47e8b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1945917077}
+    - target: {fileID: 6562549139885820515, guid: 04e83638a477c9d40a1c7b216bc47e8b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ContinuePlay
+      objectReference: {fileID: 0}
+    - target: {fileID: 8652103639151443634, guid: 04e83638a477c9d40a1c7b216bc47e8b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1945917077}
+    - target: {fileID: 8652103639151443634, guid: 04e83638a477c9d40a1c7b216bc47e8b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReturnLobby
+      objectReference: {fileID: 0}
     - target: {fileID: 8652103639451374744, guid: 04e83638a477c9d40a1c7b216bc47e8b,
         type: 3}
       propertyPath: m_IsActive
@@ -4129,6 +4149,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.0834444, y: 6.854725, z: 0.63301486}
   m_Center: {x: -1.5939575, y: 3.2058797, z: 0.029313289}
+--- !u!114 &1945917077 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3203636131610651460, guid: f3a2c02ed0ce2d748a49500e6f4cab95,
+    type: 3}
+  m_PrefabInstance: {fileID: 2051983065}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cfd7281967a92744bfb33a33694ec97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1947667552
 GameObject:
   m_ObjectHideFlags: 0
@@ -4819,7 +4851,7 @@ PrefabInstance:
         type: 3}
       propertyPath: pauseMenu
       value: 
-      objectReference: {fileID: 155657147}
+      objectReference: {fileID: 421329110}
     - target: {fileID: 8986640232840374536, guid: f3a2c02ed0ce2d748a49500e6f4cab95,
         type: 3}
       propertyPath: jugador

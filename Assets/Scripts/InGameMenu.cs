@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class InGameMenu : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class InGameMenu : MonoBehaviour
     public GameObject pauseMenu;
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.Escape) && Global.PlayerScript == false)
         {
             if(enPausa)
             {
@@ -38,5 +39,11 @@ public class InGameMenu : MonoBehaviour
         Global.PlayerScript = true;
         Cursor.lockState = CursorLockMode.Confined;
 
+    }
+    public void ReturnLobby()
+    {
+        Debug.Log("PaCasa");
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(0);
     }
 }

@@ -737,7 +737,7 @@ MonoBehaviour:
   menuStart: {fileID: 446874699}
   playMenu: {fileID: 806961587}
   profileMenu: {fileID: 1570608170}
-  optionsMenu: {fileID: 0}
+  optionsMenu: {fileID: 1085822980}
   creditsMenu: {fileID: 2102745823}
   playButton: {fileID: 506709115}
 --- !u!4 &321211042
@@ -3174,6 +3174,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1075641343}
   m_CullTransparentMesh: 1
+--- !u!1 &1085822980 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3426671418701752754, guid: b55fef30ca7bebb459174f5c1d49e340,
+    type: 3}
+  m_PrefabInstance: {fileID: 1129262120}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1090868154
 GameObject:
   m_ObjectHideFlags: 0
