@@ -46344,6 +46344,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
         type: 3}
+      propertyPath: secondDialogue.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
+        type: 3}
       propertyPath: dialogueLines.Array.data[0]
       value: Hello traveler, welcome to the newbie dungeon. As I can see you're not
         from here so let me explain to you the basics. You can move your character
@@ -46370,6 +46375,21 @@ PrefabInstance:
       value: "Okey una vez que abras la puerta tendr\xE1s que derrotar a 2 Porcux
         de Tierra.Cuando los derrotes podr\xE1s abrir la puerta que se encuentra
         al final de la habitaci\xF3n.\r\nSuerte aventurero.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
+        type: 3}
+      propertyPath: secondDialogue.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
+        type: 3}
+      propertyPath: secondDialogue.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
+        type: 3}
+      propertyPath: secondDialogue.Array.data[2]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4492212144857737918, guid: b1c7b83cd0ff61441804e496691da026,
         type: 3}
@@ -110677,7 +110697,7 @@ PrefabInstance:
     - target: {fileID: 1924799185060217767, guid: 5e4be7aa8f7336345be4f39f9c2ee934,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.757
+      value: 17.73
       objectReference: {fileID: 0}
     - target: {fileID: 1924799185060217767, guid: 5e4be7aa8f7336345be4f39f9c2ee934,
         type: 3}
@@ -110687,7 +110707,7 @@ PrefabInstance:
     - target: {fileID: 1924799185060217767, guid: 5e4be7aa8f7336345be4f39f9c2ee934,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.417
+      value: 29.6
       objectReference: {fileID: 0}
     - target: {fileID: 1924799185060217767, guid: 5e4be7aa8f7336345be4f39f9c2ee934,
         type: 3}
@@ -116934,7 +116954,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7090274768396369265}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.947, y: 1.795, z: -126.143}
+  m_LocalPosition: {x: 23.919998, y: 1.795, z: -104.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -117001,7 +117021,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7090274768425060573}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.947, y: 1.795, z: -126.143}
+  m_LocalPosition: {x: 23.919998, y: 1.795, z: -104.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

@@ -78,6 +78,7 @@ public class NPCInteractable : MonoBehaviour
             if(this.gameObject.layer == 6)
             {
                 this.gameObject.transform.position = respawnPoint.position;
+                this.gameObject.transform.rotation = Quaternion.Euler(0, 90, 0);
                 for (int i = 0; i <= dialogueLines[i].Length; i++) 
                 {
                     dialogueLines[i] = secondDialogue[i];
