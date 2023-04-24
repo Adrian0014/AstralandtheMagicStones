@@ -7,25 +7,44 @@ public class Antorchas : MonoBehaviour
 
     public GameObject Llamas;
     public GameObject Puerta;
+    public  bool activado = false;
     [SerializeField] private GameObject camaraAntorcha;
 
     private Rigidbody DoorRigg;
-
-
+    public Animator anim;
 
     void Start()
     {
         DoorRigg = Puerta.GetComponent<Rigidbody>();
+        anim = Puerta.GetComponentInChildren<Animator>();
     }
 
 
     void OnTriggerEnter(Collider collider)
-   {
-        if(collider.gameObject.tag == "Caliente")
-       {
-            
+   {        
+    
+        if(collider.gameObject.tag == "Caliente" && activado == false && Global.bigTorch == 2)
+        {
+            Global.bigTorch++;
+            activado = true;
             Llamas.SetActive(true);
-       }
+            Debug.Log("LUIIIIIIIIS");
+            
+            camaraAntorcha.SetActive(true);
+            anim.SetBool("Desbloqueado", true);
+            Destroy(camaraAntorcha, 4f);
+            Destroy(Puerta, 4f);
+
+        }
+        if(collider.gameObject.tag == "Caliente" && activado == false)
+        {
+            activado = true;
+            Llamas.SetActive(true);
+            Debug.Log("carmen");
+            Global.bigTorch++;
+        }
+
+
 
         if(this.gameObject.tag == "Antorcha" && collider.gameObject.tag == "Caliente")
         {
@@ -40,13 +59,5 @@ public class Antorchas : MonoBehaviour
             camaraAntorcha.SetActive(true);
             Destroy(camaraAntorcha, 4f);
         }
-    }
-    
-
-    void Congelacion()
-    {
-
-
-
     }
 }
