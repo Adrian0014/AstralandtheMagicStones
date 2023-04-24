@@ -7,6 +7,22 @@ public class InGameMenu : MonoBehaviour
 {
     public static bool enPausa = false;
     public GameObject pauseMenu;
+    public GameObject selectMenuGame;
+    public GameObject interfazInGame;
+    public static InGameMenu Instance;
+
+    void Awake() 
+    {
+        if( Instance != null && Instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            Instance = this;
+        }
+    }
+
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape) && Global.PlayerScript == false)
@@ -25,6 +41,8 @@ public class InGameMenu : MonoBehaviour
     public void ContinuePlay()
     {
         pauseMenu.SetActive(false);
+        selectMenuGame.SetActive(false);
+        interfazInGame.SetActive(true);
         Time.timeScale = 1f;
         enPausa = false;
         Global.PlayerScript = false;
@@ -44,6 +62,24 @@ public class InGameMenu : MonoBehaviour
     {
         Debug.Log("PaCasa");
         Time.timeScale = 1f;
+        Global.PlayerScript = false;
         SceneManager.LoadScene(0);
+    }
+
+    public void LevelSelect()
+    {
+        Debug.Log("PaCasa");
+        Time.timeScale = 0f;
+        Global.PlayerScript = true;
+        selectMenuGame.SetActive(true);
+        interfazInGame.SetActive(false);
+        Cursor.lockState = CursorLockMode.Confined;
+
+    }
+    public void GoldenLevel()
+    {
+        Global.nivel = 5;
+        PlayerPrefs.SetInt("LevelMax",Global.nivel);
+        SceneManager.LoadScene(Global.nivel);
     }
 }

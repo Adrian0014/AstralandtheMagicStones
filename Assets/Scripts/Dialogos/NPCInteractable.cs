@@ -84,6 +84,11 @@ public class NPCInteractable : MonoBehaviour
                     dialogueLines[i] = secondDialogue[i];
                 }
             }
+            if(this.gameObject.layer == 7)
+            {
+                Debug.Log("MenuNiveles");
+                InGameMenu.Instance.LevelSelect();
+            }
             
         }
     }
