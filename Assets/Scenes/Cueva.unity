@@ -320,6 +320,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: CuevaOrganizada
       objectReference: {fileID: 0}
+    - target: {fileID: 7773696804520906680, guid: 57fc85103c94cd446aae90e27741fdbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7773696805836156197, guid: 57fc85103c94cd446aae90e27741fdbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57fc85103c94cd446aae90e27741fdbb, type: 3}
 --- !u!1 &112001148 stripped
@@ -604,6 +614,11 @@ PrefabInstance:
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 220633958}
+    - target: {fileID: 3203636131610651460, guid: f3a2c02ed0ce2d748a49500e6f4cab95,
+        type: 3}
+      propertyPath: interfazInGame
+      value: 
+      objectReference: {fileID: 1224861152}
     - target: {fileID: 8986640232840374536, guid: f3a2c02ed0ce2d748a49500e6f4cab95,
         type: 3}
       propertyPath: jugador
@@ -619,6 +634,11 @@ PrefabInstance:
       propertyPath: IconoFuego
       value: 
       objectReference: {fileID: 1979385537}
+    - target: {fileID: 8986640232840374536, guid: f3a2c02ed0ce2d748a49500e6f4cab95,
+        type: 3}
+      propertyPath: CorrientesAgua
+      value: 
+      objectReference: {fileID: 1407874708}
     - target: {fileID: 8986640232840374536, guid: f3a2c02ed0ce2d748a49500e6f4cab95,
         type: 3}
       propertyPath: puntoApuntando
@@ -733,6 +753,57 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 586575631}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1224861152 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8652103639794616666, guid: 04e83638a477c9d40a1c7b216bc47e8b,
+    type: 3}
+  m_PrefabInstance: {fileID: 586575631}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1407874708
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1407874709}
+  - component: {fileID: 1407874710}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1407874709
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407874708}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 43.35, y: 89.869995, z: -232}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1407874710
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407874708}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1419120841 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8652103640107695546, guid: 04e83638a477c9d40a1c7b216bc47e8b,
@@ -764,6 +835,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6090648825317487354, guid: 6707c9c5aad9c234cb3c25f97b8c4e7e,
+        type: 3}
+      propertyPath: powerList.Array.data[0].power
+      value: 
+      objectReference: {fileID: 5403892122594663968, guid: c391b9d26ec713442b80c3f3f2cf6f2a,
+        type: 3}
     - target: {fileID: 6090648825317487355, guid: 6707c9c5aad9c234cb3c25f97b8c4e7e,
         type: 3}
       propertyPath: m_RootOrder
