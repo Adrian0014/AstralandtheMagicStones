@@ -28,6 +28,18 @@ public class NPCInteractable : MonoBehaviour
     void Awake()
     {
         animNPC = GetComponent<Animator>();
+        if(Global.ReturnHome == true)
+        {
+            Debug.Log("pinga");
+            this.gameObject.transform.position = respawnPoint.position;
+            this.gameObject.transform.rotation = Quaternion.Euler(0, 90, 0);
+            Global.ReturnHome = true;
+            for (int i = 0; i <= dialogueLines[i].Length; i++) 
+            {
+                dialogueLines[i] = secondDialogue[i];
+            }
+                
+        }
     }
     public void Interact()
     {
@@ -79,11 +91,24 @@ public class NPCInteractable : MonoBehaviour
             {
                 this.gameObject.transform.position = respawnPoint.position;
                 this.gameObject.transform.rotation = Quaternion.Euler(0, 90, 0);
+                Global.ReturnHome = true;
                 for (int i = 0; i <= dialogueLines[i].Length; i++) 
                 {
                     dialogueLines[i] = secondDialogue[i];
                 }
             }
+            /*if(Global.ReturnHome == true)
+            {
+                Debug.Log("pinga");
+                this.gameObject.transform.position = respawnPoint.position;
+                this.gameObject.transform.rotation = Quaternion.Euler(0, 90, 0);
+                Global.ReturnHome = true;
+                for (int i = 0; i <= dialogueLines[i].Length; i++) 
+                {
+                    dialogueLines[i] = secondDialogue[i];
+                }
+                
+            }*/
             if(this.gameObject.layer == 7)
             {
                 Debug.Log("MenuNiveles");
