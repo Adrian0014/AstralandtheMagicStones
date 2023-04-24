@@ -82,4 +82,14 @@ public class InGameMenu : MonoBehaviour
         PlayerPrefs.SetInt("LevelMax",Global.nivel);
         SceneManager.LoadScene(Global.nivel);
     }
+    
+    void OnTriggerEnter(Collider other) 
+    {
+        if(other.gameObject.CompareTag("Player"))
+        {
+            Global.nivel = 6;
+            PlayerPrefs.SetInt("LevelMax",Global.nivel);
+            SceneManager.LoadScene(Global.nivel);
+        }
+    }
 }
