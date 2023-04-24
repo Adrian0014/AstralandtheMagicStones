@@ -78,6 +78,8 @@ public class InGameMenu : MonoBehaviour
     }
     public void GoldenLevel()
     {
+        Time.timeScale = 1f;
+        Global.PlayerScript = false;
         Global.nivel = 5;
         PlayerPrefs.SetInt("LevelMax",Global.nivel);
         SceneManager.LoadScene(Global.nivel);
