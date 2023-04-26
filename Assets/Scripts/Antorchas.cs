@@ -28,8 +28,6 @@ public class Antorchas : MonoBehaviour
             Global.bigTorch++;
             activado = true;
             Llamas.SetActive(true);
-            Debug.Log("LUIIIIIIIIS");
-            
             camaraAntorcha.SetActive(true);
             anim.SetBool("Desbloqueado", true);
             Destroy(camaraAntorcha, 4f);
@@ -40,22 +38,21 @@ public class Antorchas : MonoBehaviour
         {
             activado = true;
             Llamas.SetActive(true);
-            Debug.Log("carmen");
             Global.bigTorch++;
         }
 
+        if (this.gameObject.tag == "BigAntorcha" && collider.gameObject.tag == "Caliente")
+        {
+            Llamas.SetActive(true);
+        }
 
-
-        if(this.gameObject.tag == "Antorcha" && collider.gameObject.tag == "Caliente")
+        if (this.gameObject.tag == "Antorcha" && collider.gameObject.tag == "Caliente")
         {
             
             Llamas.SetActive(true);
-            //GameManager.Instance.Activacion();
-            
             DoorRigg.AddForce(0, 50, 0);
             Puerta.GetComponent<Collider>().enabled = false;
             Destroy(Puerta, 4f);
-            Debug.Log("Activa");
             camaraAntorcha.SetActive(true);
             Destroy(camaraAntorcha, 4f);
         }
