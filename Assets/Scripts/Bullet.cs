@@ -15,21 +15,16 @@ public class Bullet : MonoBehaviour
         
     void OnTriggerEnter(Collider collider)
     {
-
-
-        this.gameObject.SetActive(false);
-        /*
-        if (Physics.collider()
-            this.gameObject.SetActive(false);
-
-
-
-        if (collision.gameObject.layer == "theobjectToIgnore")
+        if (gorundLayer == (gorundLayer | (1 << collider.gameObject.layer)))
         {
-            Physics.IgnoreCollision(theobjectToIgnore.collider, collider);
+        // El objeto colisionado está en una de las capas especificadas en targetLayers
+        // Aquí pones el código que quieras que se ejecute al detectar una de las capas específicas
+        Debug.Log("La bala ha chocado con una de las capas especificadas en targetLayers");
+        this.gameObject.SetActive(false);
+
         }
 
-        if (Physics.Raycast(groundSensor.position, Vector3.down, sensorRadius, gorundLayer))
-        */
+        
+
     }
 }

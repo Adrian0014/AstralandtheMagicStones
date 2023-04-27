@@ -44,6 +44,7 @@ public class Antorchas : MonoBehaviour
         if (this.gameObject.tag == "BigAntorcha" && collider.gameObject.tag == "Caliente")
         {
             Llamas.SetActive(true);
+            Destroy(Puerta);
         }
 
         if (this.gameObject.tag == "Antorcha" && collider.gameObject.tag == "Caliente")
