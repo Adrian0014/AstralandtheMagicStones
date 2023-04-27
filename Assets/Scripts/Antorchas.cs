@@ -41,12 +41,6 @@ public class Antorchas : MonoBehaviour
             Global.bigTorch++;
         }
 
-        if (this.gameObject.tag == "BigAntorcha" && collider.gameObject.tag == "Caliente")
-        {
-            Llamas.SetActive(true);
-            Destroy(Puerta);
-        }
-
         if (this.gameObject.tag == "Antorcha" && collider.gameObject.tag == "Caliente")
         {
             
@@ -57,5 +51,20 @@ public class Antorchas : MonoBehaviour
             camaraAntorcha.SetActive(true);
             Destroy(camaraAntorcha, 4f);
         }
+
+        if (this.gameObject.tag == "BigAntorcha" && collider.gameObject.tag == "Caliente")
+        {
+            Llamas.SetActive(true);
+            Destroy(Puerta);
+        }
+        if (this.gameObject.tag == "EndDoor" && collider.gameObject.tag == "Caliente")
+        {
+            Llamas.SetActive(true);
+            DoorRigg.AddForce(0, -50, 0);
+            Puerta.GetComponent<Collider>().enabled = false;
+            Destroy(Puerta, 4f);
+        }
+
+
     }
 }
