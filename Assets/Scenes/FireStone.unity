@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2614.379, g: 2645.1055, b: 3740.2188, a: 1}
+  m_IndirectSpecularColor: {r: 2614.1992, g: 2644.961, b: 3739.625, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3274,7 +3274,7 @@ MonoBehaviour:
   camaraNPC: {fileID: 1877974900}
   unScaledTime: 0
   dialogueLines:
-  - una vuelta?
+  - Ready for adventure?
   nameLines:
   - Trasnpote
   secondDialogue: []
@@ -4567,26 +4567,73 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1662640981454937093, guid: 7fd7ee6f0865f6f4a9d0f96530890bde,
         type: 3}
+      propertyPath: dialogueLines.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1662640981454937093, guid: 7fd7ee6f0865f6f4a9d0f96530890bde,
+        type: 3}
       propertyPath: secondDialogue.Array.size
-      value: 2
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1662640981454937093, guid: 7fd7ee6f0865f6f4a9d0f96530890bde,
+        type: 3}
+      propertyPath: dialogueLines.Array.data[0]
+      value: Hello Young Mike.
       objectReference: {fileID: 0}
     - target: {fileID: 1662640981454937093, guid: 7fd7ee6f0865f6f4a9d0f96530890bde,
         type: 3}
       propertyPath: dialogueLines.Array.data[1]
-      value: 'con la m sacas el mapa
-
-        estare en tu casa'
+      value: We were waiting for your arrival.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1662640981454937093, guid: 7fd7ee6f0865f6f4a9d0f96530890bde,
+        type: 3}
+      propertyPath: dialogueLines.Array.data[2]
+      value: Let me introduce myself, I am Edward, considered the official healer
+        of this region called Astral.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1662640981454937093, guid: 7fd7ee6f0865f6f4a9d0f96530890bde,
+        type: 3}
+      propertyPath: dialogueLines.Array.data[3]
+      value: Don't be alarmed, I know all of this may seem very strange, but you
+        can trust us.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1662640981454937093, guid: 7fd7ee6f0865f6f4a9d0f96530890bde,
+        type: 3}
+      propertyPath: dialogueLines.Array.data[4]
+      value: Come with me to a more intimate place so you can understand everything
+        that is happening to you.
       objectReference: {fileID: 0}
     - target: {fileID: 1662640981454937093, guid: 7fd7ee6f0865f6f4a9d0f96530890bde,
         type: 3}
       propertyPath: secondDialogue.Array.data[0]
-      value: si le das a la e podras entar en tu casa.Aqui podras descansar y hechar
-        un vistazo
+      value: You have just arrived at the most important experience that you will
+        have to face, which is to escape from Astral and be able to return home safe
+        and sound.
       objectReference: {fileID: 0}
     - target: {fileID: 1662640981454937093, guid: 7fd7ee6f0865f6f4a9d0f96530890bde,
         type: 3}
       propertyPath: secondDialogue.Array.data[1]
-      value: si te vas al carropodras vijar a los diferentes mapas
+      value: To do this, you will have to travel through the entire region of Astral
+        in a specific order, defeat all the enemies that are in the different towns,
+        obtain the orbs, and...activate the portal back home!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1662640981454937093, guid: 7fd7ee6f0865f6f4a9d0f96530890bde,
+        type: 3}
+      propertyPath: secondDialogue.Array.data[2]
+      value: I'm sorry, I know this is a lot of information all at once, and I understand
+        that you're not understanding anything right now...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1662640981454937093, guid: 7fd7ee6f0865f6f4a9d0f96530890bde,
+        type: 3}
+      propertyPath: secondDialogue.Array.data[3]
+      value: "I'll leave you this book here where you can discover everything that
+        happened for Astral to go from being a peaceful place to becoming this infernal
+        place completely infected with Porcux\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1662640981454937093, guid: 7fd7ee6f0865f6f4a9d0f96530890bde,
+        type: 3}
+      propertyPath: secondDialogue.Array.data[4]
+      value: Here is where you will reside during your stay in Firestone. Cozy, right?
       objectReference: {fileID: 0}
     - target: {fileID: 1812764932401973674, guid: 7fd7ee6f0865f6f4a9d0f96530890bde,
         type: 3}

@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1872.79, g: 2026.9531, b: 2986.3203, a: 1}
+  m_IndirectSpecularColor: {r: 1880.0996, g: 2039.248, b: 3015.4492, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -258,6 +258,11 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6596802126919129493, guid: 7504490156be3e34b960ea6e5e9bf6ba,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7274989614272038044, guid: 7504490156be3e34b960ea6e5e9bf6ba,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -471,7 +476,7 @@ GameObject:
   - component: {fileID: 60293468}
   - component: {fileID: 60293467}
   - component: {fileID: 60293466}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Antorcha grande (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15433,7 +15438,7 @@ GameObject:
   - component: {fileID: 953723124}
   - component: {fileID: 953723123}
   - component: {fileID: 953723122}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Antorcha grande (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15551,7 +15556,7 @@ GameObject:
   - component: {fileID: 1087892244}
   - component: {fileID: 1087892243}
   - component: {fileID: 1087892242}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Antorcha grande (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21511,7 +21516,7 @@ GameObject:
   - component: {fileID: 1703218894}
   - component: {fileID: 1703218893}
   - component: {fileID: 1703218892}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Antorcha grande (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
