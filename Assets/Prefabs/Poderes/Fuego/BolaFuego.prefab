@@ -5002,7 +5002,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gorundLayer:
     serializedVersion: 2
-    m_Bits: 216
+    m_Bits: 728
 --- !u!1 &369881103343285633
 GameObject:
   m_ObjectHideFlags: 0

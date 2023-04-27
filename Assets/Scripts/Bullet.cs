@@ -17,11 +17,7 @@ public class Bullet : MonoBehaviour
     {
         if (gorundLayer == (gorundLayer | (1 << collider.gameObject.layer)))
         {
-        // El objeto colisionado está en una de las capas especificadas en targetLayers
-        // Aquí pones el código que quieras que se ejecute al detectar una de las capas específicas
-        Debug.Log("La bala ha chocado con una de las capas especificadas en targetLayers");
-        this.gameObject.SetActive(false);
-
+            this.gameObject.SetActive(false);
         }
 
         
