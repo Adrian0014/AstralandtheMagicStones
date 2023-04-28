@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cueva.unity
     guid: a8befe0b78368e14aad9232d3c1f67a8
+  - enabled: 1
+    path: Assets/Scenes/CasaDeMike.unity
+    guid: 79496cbf7a43b3643b9bdfa02faaac62
   - enabled: 0
     path: Assets/OutdoorsScene.unity
     guid: 8124e5870f4fd4c779e7a5f994e84ad1
