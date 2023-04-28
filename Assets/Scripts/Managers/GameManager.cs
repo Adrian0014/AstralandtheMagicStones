@@ -102,4 +102,10 @@ public class GameManager : MonoBehaviour
 
         }
     }
+    public void Recuperacion()
+    {
+        puntosVidas[0].SetActive(true);
+        puntosVidas[1].SetActive(true);
+        puntosVidas[2].SetActive(true);        
+    }
 }

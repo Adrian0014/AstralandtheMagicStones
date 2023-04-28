@@ -16,6 +16,7 @@ TagManager:
   - Casa
   - BigAntorcha
   - EndDoor
+  - Recovery
   layers:
   - Default
   - TransparentFX
