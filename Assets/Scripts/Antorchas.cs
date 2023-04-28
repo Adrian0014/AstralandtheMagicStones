@@ -23,7 +23,7 @@ public class Antorchas : MonoBehaviour
     void OnTriggerEnter(Collider collider)
    {        
     
-        if(collider.gameObject.tag == "Caliente" && activado == false && Global.bigTorch == 2)
+        if(collider.gameObject.tag == "Caliente" && activado == false && Global.bigTorch == 3)
         {
             Global.bigTorch++;
             activado = true;
