@@ -46719,6 +46719,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7909242040471085820, guid: b1c7b83cd0ff61441804e496691da026,
         type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7909242040471085820, guid: b1c7b83cd0ff61441804e496691da026,
+        type: 3}
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
@@ -98403,6 +98408,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7909242040471085820, guid: b1c7b83cd0ff61441804e496691da026,
         type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7909242040471085820, guid: b1c7b83cd0ff61441804e496691da026,
+        type: 3}
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
@@ -118147,7 +118157,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8470435775619315782}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decoracion1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
