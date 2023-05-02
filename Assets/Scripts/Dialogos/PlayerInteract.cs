@@ -19,18 +19,36 @@ public class PlayerInteract : MonoBehaviour
                     npcInteractable.Interact();
                 }
 
-                if(collider.gameObject.CompareTag("Casa"))
+                if(collider.gameObject.CompareTag("Casa") && Global.PlayerScript == false)
                 {
-                    //npcInteractable.EntrarCasa();
                     Debug.Log("Entrar a casa");
+                    SceneManager.LoadScene(7);
+                    Global.nivel = 7;
+                    PlayerPrefs.SetInt("LevelMax",Global.nivel);
+                    Global.OutHouse = true;
                 }
-                    if(collider.gameObject.CompareTag("PuertaFinal"))
+
+                if(collider.gameObject.CompareTag("PuertaFinal") && Global.PlayerScript == false)
                 {
                     Debug.Log("Fianl");
                     SceneManager.LoadScene(3);
                     Global.nivel = 3;
                     PlayerPrefs.SetInt("LevelMax",Global.nivel);
                 }
+
+                if(collider.gameObject.CompareTag("ExitHouse") && Global.PlayerScript == false)
+                {
+                    Debug.Log("SEXOOOOOOOOOO");
+                    SceneManager.LoadScene(4);
+                    Global.nivel = 4;
+                    PlayerPrefs.SetInt("LevelMax",Global.nivel);
+                }
+
+                if(collider.gameObject.CompareTag("EndGame") && Global.PlayerScript == false)
+                {
+                    Debug.Log("Papas");
+                }
+
             }
         }
         

@@ -17,6 +17,8 @@ TagManager:
   - BigAntorcha
   - EndDoor
   - Recovery
+  - EndGame
+  - ExitHouse
   layers:
   - Default
   - TransparentFX
