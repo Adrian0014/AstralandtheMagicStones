@@ -21,7 +21,6 @@ public class PlayerInteract : MonoBehaviour
 
                 if(collider.gameObject.CompareTag("Casa") && Global.PlayerScript == false)
                 {
-                    Debug.Log("Entrar a casa");
                     SceneManager.LoadScene(7);
                     Global.nivel = 7;
                     PlayerPrefs.SetInt("LevelMax",Global.nivel);
@@ -30,7 +29,6 @@ public class PlayerInteract : MonoBehaviour
 
                 if(collider.gameObject.CompareTag("PuertaFinal") && Global.PlayerScript == false)
                 {
-                    Debug.Log("Fianl");
                     SceneManager.LoadScene(3);
                     Global.nivel = 3;
                     PlayerPrefs.SetInt("LevelMax",Global.nivel);
@@ -38,7 +36,6 @@ public class PlayerInteract : MonoBehaviour
 
                 if(collider.gameObject.CompareTag("ExitHouse") && Global.PlayerScript == false)
                 {
-                    Debug.Log("SEXOOOOOOOOOO");
                     SceneManager.LoadScene(4);
                     Global.nivel = 4;
                     PlayerPrefs.SetInt("LevelMax",Global.nivel);
@@ -47,6 +44,9 @@ public class PlayerInteract : MonoBehaviour
                 if(collider.gameObject.CompareTag("EndGame") && Global.PlayerScript == false)
                 {
                     Debug.Log("Papas");
+                    Global.nivel = 4;
+                    PlayerPrefs.SetInt("LevelMax",Global.nivel);
+                    SceneManager.LoadScene(8);
                 }
 
             }

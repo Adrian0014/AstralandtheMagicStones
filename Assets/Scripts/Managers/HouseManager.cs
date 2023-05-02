@@ -10,15 +10,8 @@ public class HouseManager : MonoBehaviour
     {
         if(Global.OutHouse == true)
         {
-            Debug.Log("sdsdasfdsfdsfsdfsdf");
             Global.OutHouse = false;
             JugadorExit.transform.position = houseRespawn.position;
         }
-    }
-
-
-    void Update()
-    {
-        
     }
 }
