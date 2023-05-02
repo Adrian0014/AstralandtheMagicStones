@@ -203,7 +203,7 @@ PrefabInstance:
     - target: {fileID: 7090274769779688809, guid: fb17d07ae7e2f82419175c32d299e5ca,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 60.592636
+      value: 60.63063
       objectReference: {fileID: 0}
     - target: {fileID: 7090274769779688809, guid: fb17d07ae7e2f82419175c32d299e5ca,
         type: 3}
@@ -213,7 +213,7 @@ PrefabInstance:
     - target: {fileID: 7090274769779688809, guid: fb17d07ae7e2f82419175c32d299e5ca,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -184.78326
+      value: -184.96626
       objectReference: {fileID: 0}
     - target: {fileID: 7090274769792676034, guid: fb17d07ae7e2f82419175c32d299e5ca,
         type: 3}
@@ -228,7 +228,7 @@ PrefabInstance:
     - target: {fileID: 7090274769792676035, guid: fb17d07ae7e2f82419175c32d299e5ca,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 60.592636
+      value: 60.63063
       objectReference: {fileID: 0}
     - target: {fileID: 7090274769792676035, guid: fb17d07ae7e2f82419175c32d299e5ca,
         type: 3}
@@ -238,7 +238,7 @@ PrefabInstance:
     - target: {fileID: 7090274769792676035, guid: fb17d07ae7e2f82419175c32d299e5ca,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -184.78326
+      value: -184.96626
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb17d07ae7e2f82419175c32d299e5ca, type: 3}
@@ -64461,7 +64461,7 @@ PrefabInstance:
     - target: {fileID: 1924799185060217767, guid: 5e4be7aa8f7336345be4f39f9c2ee934,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 46.2
+      value: 46.238
       objectReference: {fileID: 0}
     - target: {fileID: 1924799185060217767, guid: 5e4be7aa8f7336345be4f39f9c2ee934,
         type: 3}
@@ -64471,7 +64471,7 @@ PrefabInstance:
     - target: {fileID: 1924799185060217767, guid: 5e4be7aa8f7336345be4f39f9c2ee934,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -160.2
+      value: -160.383
       objectReference: {fileID: 0}
     - target: {fileID: 1924799185060217767, guid: 5e4be7aa8f7336345be4f39f9c2ee934,
         type: 3}
@@ -64558,6 +64558,11 @@ PrefabInstance:
       propertyPath: intercativeObject
       value: 
       objectReference: {fileID: 2031075526}
+    - target: {fileID: 9029885935930399468, guid: 5e4be7aa8f7336345be4f39f9c2ee934,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e4be7aa8f7336345be4f39f9c2ee934, type: 3}
 --- !u!1 &2025226567
