@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1872.9414, g: 2027.2754, b: 2987.4062, a: 1}
+  m_IndirectSpecularColor: {r: 1880.3867, g: 2039.5957, b: 3016.2617, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -47088,7 +47088,7 @@ PrefabInstance:
     - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
         type: 3}
       propertyPath: nameLines.Array.data[0]
-      value: Porcux de aire
+      value: Air Porcux
       objectReference: {fileID: 0}
     - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
         type: 3}
