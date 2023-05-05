@@ -10680,6 +10680,10 @@ MonoBehaviour:
   activado: 0
   camaraAntorcha: {fileID: 0}
   anim: {fileID: 0}
+  AudioPuerta: {fileID: 0}
+  EncendidoSFX: {fileID: 0}
+  ActivoSFX: {fileID: 0}
+  PuertaArriba: {fileID: 0}
 --- !u!65 &202014837
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21418,6 +21422,10 @@ MonoBehaviour:
   activado: 0
   camaraAntorcha: {fileID: 0}
   anim: {fileID: 0}
+  AudioPuerta: {fileID: 0}
+  EncendidoSFX: {fileID: 0}
+  ActivoSFX: {fileID: 0}
+  PuertaArriba: {fileID: 0}
 --- !u!65 &444489127
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26571,6 +26579,10 @@ MonoBehaviour:
   activado: 0
   camaraAntorcha: {fileID: 0}
   anim: {fileID: 0}
+  AudioPuerta: {fileID: 0}
+  EncendidoSFX: {fileID: 0}
+  ActivoSFX: {fileID: 0}
+  PuertaArriba: {fileID: 0}
 --- !u!65 &514195994
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37330,6 +37342,10 @@ MonoBehaviour:
   activado: 0
   camaraAntorcha: {fileID: 0}
   anim: {fileID: 0}
+  AudioPuerta: {fileID: 0}
+  EncendidoSFX: {fileID: 0}
+  ActivoSFX: {fileID: 0}
+  PuertaArriba: {fileID: 0}
 --- !u!65 &1082113639
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37440,6 +37456,10 @@ MonoBehaviour:
   activado: 0
   camaraAntorcha: {fileID: 0}
   anim: {fileID: 0}
+  AudioPuerta: {fileID: 0}
+  EncendidoSFX: {fileID: 0}
+  ActivoSFX: {fileID: 0}
+  PuertaArriba: {fileID: 0}
 --- !u!65 &1182206116
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37476,6 +37496,10 @@ MonoBehaviour:
   activado: 0
   camaraAntorcha: {fileID: 0}
   anim: {fileID: 0}
+  AudioPuerta: {fileID: 0}
+  EncendidoSFX: {fileID: 0}
+  ActivoSFX: {fileID: 0}
+  PuertaArriba: {fileID: 0}
 --- !u!65 &1190983047
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37512,6 +37536,10 @@ MonoBehaviour:
   activado: 0
   camaraAntorcha: {fileID: 0}
   anim: {fileID: 0}
+  AudioPuerta: {fileID: 0}
+  EncendidoSFX: {fileID: 0}
+  ActivoSFX: {fileID: 0}
+  PuertaArriba: {fileID: 0}
 --- !u!65 &1199031389
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48460,6 +48488,10 @@ MonoBehaviour:
   activado: 0
   camaraAntorcha: {fileID: 0}
   anim: {fileID: 0}
+  AudioPuerta: {fileID: 0}
+  EncendidoSFX: {fileID: 0}
+  ActivoSFX: {fileID: 0}
+  PuertaArriba: {fileID: 0}
 --- !u!65 &1522226712
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58336,6 +58368,10 @@ MonoBehaviour:
   activado: 0
   camaraAntorcha: {fileID: 0}
   anim: {fileID: 0}
+  AudioPuerta: {fileID: 0}
+  EncendidoSFX: {fileID: 0}
+  ActivoSFX: {fileID: 0}
+  PuertaArriba: {fileID: 0}
 --- !u!65 &1728729019
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58700,6 +58736,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
+        type: 3}
+      propertyPath: TalkNPC
+      value: 
+      objectReference: {fileID: 8300000, guid: 097770f688fb629408dbccbc03315882, type: 3}
     - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
         type: 3}
       propertyPath: nameText

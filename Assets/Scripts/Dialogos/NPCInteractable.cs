@@ -17,6 +17,11 @@ public class NPCInteractable : MonoBehaviour
     [SerializeField, TextArea(4,6)]private string[] nameLines;
     [SerializeField, TextArea(4,6)]private string[] secondDialogue;
     public Transform respawnPoint;
+    
+    
+    
+    private AudioSource NPCAudio;
+    public AudioClip TalkNPC;
    
 
     private bool didDialogueStart;
@@ -40,6 +45,7 @@ public class NPCInteractable : MonoBehaviour
             }
                 
         }
+        NPCAudio = GetComponent<AudioSource>();
     }
     public void Interact()
     {
@@ -70,11 +76,13 @@ public class NPCInteractable : MonoBehaviour
         Time.timeScale = 0;
         Global.PlayerScript = true;
         StartCoroutine(ShowLine());
+        NPCAudio.PlayOneShot(TalkNPC);
     }
 
     private void NextDialogueLine()
     {
         lineIndex++;
+        NPCAudio.PlayOneShot(TalkNPC);
         if(lineIndex < dialogueLines.Length)
         {
             StartCoroutine(ShowLine());
@@ -87,6 +95,7 @@ public class NPCInteractable : MonoBehaviour
             Global.PlayerScript = false;
             animNPC.SetBool("Charla", false);
             Time.timeScale = 1;
+            
             if(this.gameObject.layer == 6)
             {
                 this.gameObject.transform.position = respawnPoint.position;
@@ -97,18 +106,6 @@ public class NPCInteractable : MonoBehaviour
                     dialogueLines[i] = secondDialogue[i];
                 }
             }
-            /*if(Global.ReturnHome == true)
-            {
-                Debug.Log("pinga");
-                this.gameObject.transform.position = respawnPoint.position;
-                this.gameObject.transform.rotation = Quaternion.Euler(0, 90, 0);
-                Global.ReturnHome = true;
-                for (int i = 0; i <= dialogueLines[i].Length; i++) 
-                {
-                    dialogueLines[i] = secondDialogue[i];
-                }
-                
-            }*/
             if(this.gameObject.layer == 7)
             {
                 Debug.Log("MenuNiveles");

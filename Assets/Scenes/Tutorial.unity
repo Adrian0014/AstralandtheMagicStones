@@ -46934,6 +46934,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
         type: 3}
+      propertyPath: TalkNPC
+      value: 
+      objectReference: {fileID: 8300000, guid: 097770f688fb629408dbccbc03315882, type: 3}
+    - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
+        type: 3}
       propertyPath: nameText
       value: 
       objectReference: {fileID: 2014102913}
@@ -100135,6 +100140,11 @@ PrefabInstance:
       propertyPath: m_ColorTemperature
       value: 3036
       objectReference: {fileID: 0}
+    - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
+        type: 3}
+      propertyPath: TalkNPC
+      value: 
+      objectReference: {fileID: 8300000, guid: 097770f688fb629408dbccbc03315882, type: 3}
     - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
         type: 3}
       propertyPath: nameText
