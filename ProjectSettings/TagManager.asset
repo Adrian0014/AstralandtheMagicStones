@@ -19,6 +19,7 @@ TagManager:
   - Recovery
   - EndGame
   - ExitHouse
+  - KillZone
   layers:
   - Default
   - TransparentFX

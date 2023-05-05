@@ -36,10 +36,16 @@ public class AI : MonoBehaviour
 
     public Transform quieta;
 
+
+    private AudioSource PorcuxAudio;
+    public AudioClip walkingPorcux;
+    public AudioClip porcuxShoot;
+
     void Awake()
     {
         porcuxAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         anim = GetComponent<Animator>();
+        PorcuxAudio = GetComponent<AudioSource>();
     }
 
 
@@ -48,6 +54,7 @@ public class AI : MonoBehaviour
         currentState = State.Patrolling;
         locationIndex = Random.Range(0, locationPoints.Length);
         waitTime = startWaitTime;
+        PorcuxAudio.clip = walkingPorcux;
     }
 
 
@@ -97,12 +104,15 @@ public class AI : MonoBehaviour
         porcuxAgent.destination = locationPoints[locationIndex].position;
         anim.SetBool("Run", false);
         anim.SetBool("Atack", false);
+        PorcuxAudio.Pause();
 
         if (waitTime <= 0)
         {
             locationIndex = Random.Range(0, locationPoints.Length);
             waitTime = startWaitTime;
             currentState = State.Patrolling;
+            PorcuxAudio.Play();
+
         }
         else
         {
@@ -111,6 +121,7 @@ public class AI : MonoBehaviour
         if (Vector3.Distance(transform.position, player.position) < visionRange)
         {
             currentState = State.Chasing;
+            PorcuxAudio.Play();
         }
     }
 
@@ -139,6 +150,7 @@ public class AI : MonoBehaviour
             GameObject AIPlantBall = PoolManager.Instance.GetPooledPower(powerType, AibulletSpawn.position, AibulletSpawn.rotation);
             AIPlantBall.SetActive(true);
             currentState = State.WaitingAttack;
+            PorcuxAudio.PlayOneShot(porcuxShoot);
 
         }
         else
@@ -157,12 +169,13 @@ public class AI : MonoBehaviour
     void WaitAttack()
     {
         porcuxAgent.destination = quieta.position;
-
+        PorcuxAudio.Pause();
 
         if (attackWaitTime <= 0)
         {
             attackWaitTime = 1;
             currentState = State.Chasing;
+            PorcuxAudio.Play();
             
         }
         else

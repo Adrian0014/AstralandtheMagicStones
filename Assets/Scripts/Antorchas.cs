@@ -11,12 +11,21 @@ public class Antorchas : MonoBehaviour
     [SerializeField] private GameObject camaraAntorcha;
 
     private Rigidbody DoorRigg;
+    
     public Animator anim;
+    
+    private AudioSource audioAntorcha;
+    public AudioSource AudioPuerta;
+    public AudioClip EncendidoSFX;
+    public AudioClip ActivoSFX;
+    public AudioClip PuertaArriba;
 
     void Start()
     {
         DoorRigg = Puerta.GetComponent<Rigidbody>();
         anim = Puerta.GetComponentInChildren<Animator>();
+        audioAntorcha = GetComponent<AudioSource>();
+        audioAntorcha.clip = ActivoSFX;
     }
 
 
@@ -50,6 +59,12 @@ public class Antorchas : MonoBehaviour
             Destroy(Puerta, 4f);
             camaraAntorcha.SetActive(true);
             Destroy(camaraAntorcha, 4f);
+
+
+            audioAntorcha.PlayOneShot(EncendidoSFX);
+            AudioPuerta.PlayOneShot(PuertaArriba);
+            audioAntorcha.PlayDelayed(4f);
+            
         }
 
         if (this.gameObject.tag == "BigAntorcha" && collider.gameObject.tag == "Caliente")

@@ -43,6 +43,14 @@ public class Playermove : MonoBehaviour
     public Cinemachine.AxisState yAxis;
 
 
+    private AudioSource PlayerAudio;
+    public AudioSource PlayerAudiowalk;
+    public AudioClip ChangesPower;
+    public AudioClip FireSFX;
+    public AudioClip WhaterSFX;
+    public AudioClip hitPlayer;
+    public AudioClip walkPlayer;
+
 
     
 
@@ -51,6 +59,8 @@ public class Playermove : MonoBehaviour
         controller = GetComponent<CharacterController>();
         anim = GetComponentInChildren<Animator>();
         cam = Camera.main.transform;
+        PlayerAudio = GetComponent<AudioSource>();
+        PlayerAudiowalk.clip = walkPlayer;
     }
 
     void Start()
@@ -112,7 +122,12 @@ public class Playermove : MonoBehaviour
             float targetAngle = Mathf.Atan2(movement.x, movement.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
             float smoothAngle = Mathf.SmoothDampAngle(transform.eulerAngles.y, cam.eulerAngles.y, ref currentVelocity, shoothTime);
             Vector3 moveDirection = Quaternion.Euler(0, targetAngle, 0) * Vector3.forward;
-            controller.Move(moveDirection.normalized * speed * Time.deltaTime);        
+            controller.Move(moveDirection.normalized * speed * Time.deltaTime);    
+            //PlayerAudiowalk.Pause();    
+        }
+        else
+        {
+            PlayerAudiowalk.Play();
         }
 
 
@@ -173,6 +188,15 @@ public class Playermove : MonoBehaviour
 
             shootColdDown = true;
             anim.SetBool("Ataque", true);
+
+            if(powerType == 1)
+            {
+                PlayerAudio.PlayOneShot(FireSFX);
+            }
+            if(powerType == 0)
+            {
+                PlayerAudio.PlayOneShot(WhaterSFX);
+            }
         }
         else
         {
@@ -184,12 +208,14 @@ public class Playermove : MonoBehaviour
         {
             Debug.Log("Fuego");
             powerType = 1;
+            PlayerAudio.PlayOneShot(ChangesPower);
         }
 
         if(Input.GetKeyDown(KeyCode.Alpha4))
         {
             Debug.Log("Agua");
             powerType = 0;
+            PlayerAudio.PlayOneShot(ChangesPower);
         }
     }
 
@@ -199,6 +225,12 @@ public class Playermove : MonoBehaviour
         if(collider.CompareTag("AI"))
         {
             GameManager.Instance.Impacto();
+            PlayerAudio.PlayOneShot(hitPlayer);
+        }
+
+        if(collider.gameObject.CompareTag("KillZone"))
+        {
+            PlayerAudio.PlayOneShot(hitPlayer);
         }
 
     }
