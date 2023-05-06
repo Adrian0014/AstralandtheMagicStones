@@ -1493,6 +1493,7 @@ MonoBehaviour:
   nameLines: []
   secondDialogue: []
   respawnPoint: {fileID: 0}
+  TalkNPC: {fileID: 0}
 --- !u!82 &6096159673224384342
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1549,7 +1550,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
