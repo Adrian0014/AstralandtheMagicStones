@@ -43,14 +43,16 @@ public class Playermove : MonoBehaviour
     public Cinemachine.AxisState yAxis;
 
 
-    private AudioSource PlayerAudio;
+    public AudioSource PlayerAudio;
     public AudioSource PlayerAudiowalk;
+    public AudioSource PlayerAudioJump;
     public AudioSource PlayerAudiChangesPower;
     public AudioClip ChangesPower;
     public AudioClip FireSFX;
     public AudioClip WhaterSFX;
     public AudioClip hitPlayer;
     public AudioClip walkPlayer;
+    public AudioClip JumpPlayer;
 
 
     
@@ -128,7 +130,16 @@ public class Playermove : MonoBehaviour
         }
         else
         {
-            PlayerAudiowalk.Play();
+            if(isGrounded == true)
+            {
+                Debug.Log("pito");
+                PlayerAudiowalk.Play();
+            }
+            if(isGrounded == false)
+            {
+                Debug.Log("no");
+                PlayerAudiowalk.Pause();
+            }
         }
 
 
@@ -159,6 +170,7 @@ public class Playermove : MonoBehaviour
         if(isGrounded && Input.GetButtonDown("Jump") && Global.PlayerScript == false)
         {
             playerVelocity.y += Mathf.Sqrt(jumpHeight * -2f * gravity);
+            PlayerAudioJump.PlayOneShot(JumpPlayer);
         }
 
         playerVelocity.y += gravity * Time.deltaTime;

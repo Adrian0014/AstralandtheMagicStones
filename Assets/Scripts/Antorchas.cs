@@ -84,6 +84,7 @@ public class Antorchas : MonoBehaviour
         {
             Llamas.SetActive(true);
             Destroy(Puerta);
+            
 
 
         }

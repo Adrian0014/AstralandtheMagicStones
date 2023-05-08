@@ -37,7 +37,7 @@ public class AI : MonoBehaviour
     public Transform quieta;
 
 
-    private AudioSource PorcuxAudio;
+    public AudioSource PorcuxAudio;
     public AudioClip walkingPorcux;
     public AudioClip porcuxShoot;
 
@@ -45,7 +45,7 @@ public class AI : MonoBehaviour
     {
         porcuxAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         anim = GetComponent<Animator>();
-        PorcuxAudio = GetComponent<AudioSource>();
+        
     }
 
 

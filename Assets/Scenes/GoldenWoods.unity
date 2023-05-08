@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1880.7891, g: 2040.2129, b: 3017.5117, a: 1}
+  m_IndirectSpecularColor: {r: 1873.2021, g: 2027.6758, b: 2988.5273, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9765,6 +9765,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1994577362}
     m_Modifications:
+    - target: {fileID: 961989470356155120, guid: c7db572129a3bdb4a802de0965d8569c,
+        type: 3}
+      propertyPath: MaxDistance
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 961989470356155120, guid: c7db572129a3bdb4a802de0965d8569c,
+        type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8350040508556960519, guid: c7db572129a3bdb4a802de0965d8569c,
         type: 3}
       propertyPath: m_Name
@@ -40543,6 +40553,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ContinuePlay
       objectReference: {fileID: 0}
+    - target: {fileID: 8652103638123059901, guid: 04e83638a477c9d40a1c7b216bc47e8b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8652103638523820231, guid: 04e83638a477c9d40a1c7b216bc47e8b,
         type: 3}
       propertyPath: m_IsActive
@@ -40562,6 +40577,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ReturnLobby
+      objectReference: {fileID: 0}
+    - target: {fileID: 8652103639451374759, guid: 04e83638a477c9d40a1c7b216bc47e8b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -340
       objectReference: {fileID: 0}
     - target: {fileID: 8652103639794616666, guid: 04e83638a477c9d40a1c7b216bc47e8b,
         type: 3}
@@ -48073,9 +48093,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 11.1
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
