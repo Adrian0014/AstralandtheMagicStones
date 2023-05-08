@@ -41,6 +41,13 @@ public class Antorchas : MonoBehaviour
             anim.SetBool("Desbloqueado", true);
             Destroy(camaraAntorcha, 4f);
             Destroy(Puerta, 4f);
+            
+            audioAntorcha.PlayOneShot(EncendidoSFX);
+            AudioPuerta.PlayOneShot(PuertaArriba);
+            audioAntorcha.PlayDelayed(4f);
+
+
+
 
         }
         if(collider.gameObject.tag == "Caliente" && activado == false)
@@ -48,6 +55,12 @@ public class Antorchas : MonoBehaviour
             activado = true;
             Llamas.SetActive(true);
             Global.bigTorch++;
+
+            audioAntorcha.PlayOneShot(EncendidoSFX);
+            audioAntorcha.PlayDelayed(4f);
+
+
+
         }
 
         if (this.gameObject.tag == "Antorcha" && collider.gameObject.tag == "Caliente")
@@ -71,6 +84,8 @@ public class Antorchas : MonoBehaviour
         {
             Llamas.SetActive(true);
             Destroy(Puerta);
+
+
         }
         if (this.gameObject.tag == "EndDoor" && collider.gameObject.tag == "Caliente")
         {
@@ -78,6 +93,8 @@ public class Antorchas : MonoBehaviour
             DoorRigg.AddForce(0, -50, 0);
             Puerta.GetComponent<Collider>().enabled = false;
             Destroy(Puerta, 4f);
+
+
         }
 
 

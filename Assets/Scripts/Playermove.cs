@@ -45,6 +45,7 @@ public class Playermove : MonoBehaviour
 
     private AudioSource PlayerAudio;
     public AudioSource PlayerAudiowalk;
+    public AudioSource PlayerAudiChangesPower;
     public AudioClip ChangesPower;
     public AudioClip FireSFX;
     public AudioClip WhaterSFX;
@@ -123,7 +124,7 @@ public class Playermove : MonoBehaviour
             float smoothAngle = Mathf.SmoothDampAngle(transform.eulerAngles.y, cam.eulerAngles.y, ref currentVelocity, shoothTime);
             Vector3 moveDirection = Quaternion.Euler(0, targetAngle, 0) * Vector3.forward;
             controller.Move(moveDirection.normalized * speed * Time.deltaTime);    
-            //PlayerAudiowalk.Pause();    
+               
         }
         else
         {
@@ -208,14 +209,14 @@ public class Playermove : MonoBehaviour
         {
             Debug.Log("Fuego");
             powerType = 1;
-            PlayerAudio.PlayOneShot(ChangesPower);
+            PlayerAudiChangesPower.PlayOneShot(ChangesPower);
         }
 
         if(Input.GetKeyDown(KeyCode.Alpha4))
         {
             Debug.Log("Agua");
             powerType = 0;
-            PlayerAudio.PlayOneShot(ChangesPower);
+            PlayerAudiChangesPower.PlayOneShot(ChangesPower);
         }
     }
 

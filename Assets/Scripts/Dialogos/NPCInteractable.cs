@@ -82,7 +82,7 @@ public class NPCInteractable : MonoBehaviour
     private void NextDialogueLine()
     {
         lineIndex++;
-        NPCAudio.PlayOneShot(TalkNPC);
+        
         if(lineIndex < dialogueLines.Length)
         {
             StartCoroutine(ShowLine());
@@ -118,6 +118,7 @@ public class NPCInteractable : MonoBehaviour
     private IEnumerator ShowLine()
     {
         dialogueText.text = string.Empty;
+        NPCAudio.PlayOneShot(TalkNPC);
         foreach(char ch in dialogueLines[lineIndex])
         {
             dialogueText.text += ch;
