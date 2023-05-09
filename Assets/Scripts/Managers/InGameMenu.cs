@@ -46,6 +46,7 @@ public class InGameMenu : MonoBehaviour
         Time.timeScale = 1f;
         enPausa = false;
         Global.PlayerScript = false;
+        Global.PauseMenu = true;
         Cursor.lockState = CursorLockMode.Locked;
     }
 
@@ -56,6 +57,7 @@ public class InGameMenu : MonoBehaviour
         enPausa = true;
         Global.PlayerScript = true;
         Cursor.lockState = CursorLockMode.Confined;
+        Global.PauseMenu = false;
 
     }
     public void ReturnLobby()
@@ -69,8 +71,8 @@ public class InGameMenu : MonoBehaviour
     public void LevelSelect()
     {
         Debug.Log("PaCasa");
-        Time.timeScale = 0f;
-        Global.PlayerScript = true;
+        //Time.timeScale = 0f;
+        //Global.PlayerScript = true;
         selectMenuGame.SetActive(true);
         interfazInGame.SetActive(false);
         Cursor.lockState = CursorLockMode.Confined;

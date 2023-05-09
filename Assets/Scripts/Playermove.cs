@@ -103,7 +103,7 @@ public class Playermove : MonoBehaviour
         LookAtTransform.eulerAngles = new Vector3(yAxis.Value, xAxis.Value, LookAtTransform.eulerAngles.z);
         
         Vector3 movement = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical")).normalized;
-        if(Input.GetButton("Fire2"))
+        if(Input.GetButton("Fire2") && Global.PlayerScript == false)
         {
             bulletSpawn = AimSpawn;
             anim.SetBool("Apuntando", true);
@@ -217,14 +217,14 @@ public class Playermove : MonoBehaviour
         }
 
 
-        if(Input.GetKeyDown(KeyCode.Alpha1))
+        if(Input.GetKeyDown(KeyCode.Alpha1) && Global.PlayerScript == false)
         {
             Debug.Log("Fuego");
             powerType = 1;
             PlayerAudiChangesPower.PlayOneShot(ChangesPower);
         }
 
-        if(Input.GetKeyDown(KeyCode.Alpha4))
+        if(Input.GetKeyDown(KeyCode.Alpha4) && Global.PlayerScript == false)
         {
             Debug.Log("Agua");
             powerType = 0;

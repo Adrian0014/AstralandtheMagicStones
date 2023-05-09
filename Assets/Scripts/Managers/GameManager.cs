@@ -36,16 +36,16 @@ public class GameManager : MonoBehaviour
 
     void Update() 
     {
-        if(Input.GetKeyDown(KeyCode.Alpha1))
+        if(Input.GetKeyDown(KeyCode.Alpha1) && Global.PlayerScript == false)
         {
 
             CorrientesAgua.GetComponent<Collider>().enabled = false;
-            IconoFuego.SetActive(true);
             IconoAgua.SetActive(false);
+            IconoFuego.SetActive(true);
         }
 
 
-        if(Input.GetKeyDown(KeyCode.Alpha4))
+        if(Input.GetKeyDown(KeyCode.Alpha4) && Global.PlayerScript == false)
         {
 
             CorrientesAgua.GetComponent<Collider>().enabled = true;
@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
             IconoFuego.SetActive(false);
         }
                 
-        if(Input.GetButton("Fire2"))
+        if(Input.GetButton("Fire2") && Global.PlayerScript == false)
         {
             puntoApuntando.SetActive(true);
         }

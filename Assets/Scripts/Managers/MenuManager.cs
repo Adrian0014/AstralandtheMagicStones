@@ -115,12 +115,18 @@ public class MenuManager : MonoBehaviour
     public void NewGame()
     {
         Global.nivel = 1;
-        SceneManager.LoadScene(Global.nivel);
+        //SceneManager.LoadScene(Global.nivel);
+        Invoke("ReseteoJuego", 2);
         PlayerPrefs.SetInt("LevelMax",Global.nivel);
     }
     public void ExitGame()
     {
         Application.Quit();
+    }
+
+    public void ReseteoJuego()
+    {
+        SceneManager.LoadScene(Global.nivel);
     }
 
 
