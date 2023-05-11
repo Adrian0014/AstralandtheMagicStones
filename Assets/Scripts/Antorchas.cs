@@ -41,6 +41,7 @@ public class Antorchas : MonoBehaviour
             anim.SetBool("Desbloqueado", true);
             Destroy(camaraAntorcha, 4f);
             Destroy(Puerta, 4f);
+            Debug.Log("feura");
             
             audioAntorcha.PlayOneShot(EncendidoSFX);
             AudioPuerta.PlayOneShot(PuertaArriba);
@@ -84,6 +85,7 @@ public class Antorchas : MonoBehaviour
         {
             Llamas.SetActive(true);
             Destroy(Puerta);
+            Debug.Log("Cueva");
             
 
 

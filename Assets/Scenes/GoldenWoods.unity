@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1873.4805, g: 2028.4648, b: 2990.7188, a: 1}
+  m_IndirectSpecularColor: {r: 1872.4365, g: 2026.0117, b: 2983.4805, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -40180,7 +40180,7 @@ PrefabInstance:
         type: 3}
       propertyPath: TalkNPC
       value: 
-      objectReference: {fileID: 8300000, guid: 097770f688fb629408dbccbc03315882, type: 3}
+      objectReference: {fileID: 8300000, guid: 9827aa45e1744cd4cb397b85943f3e29, type: 3}
     - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
         type: 3}
       propertyPath: nameText
@@ -49034,7 +49034,7 @@ PrefabInstance:
         type: 3}
       propertyPath: TalkNPC
       value: 
-      objectReference: {fileID: 8300000, guid: 097770f688fb629408dbccbc03315882, type: 3}
+      objectReference: {fileID: 8300000, guid: 9827aa45e1744cd4cb397b85943f3e29, type: 3}
     - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
         type: 3}
       propertyPath: nameText

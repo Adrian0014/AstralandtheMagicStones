@@ -20,6 +20,7 @@ TagManager:
   - EndGame
   - ExitHouse
   - KillZone
+  - AntorchaCave
   layers:
   - Default
   - TransparentFX

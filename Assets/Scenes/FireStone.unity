@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2614.334, g: 2645.0195, b: 3739.5625, a: 1}
+  m_IndirectSpecularColor: {r: 2614.3262, g: 2645.004, b: 3739.5703, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7994,7 +7994,9 @@ MonoBehaviour:
   - Trasnpote
   secondDialogue: []
   respawnPoint: {fileID: 0}
-  TalkNPC: {fileID: 8300000, guid: 097770f688fb629408dbccbc03315882, type: 3}
+  TalkNPC: {fileID: 8300000, guid: 851f8ccc74cfa3743be110433c9b92a0, type: 3}
+  typingTime: 0.02
+  NPCTimeToSound: 5
 --- !u!136 &785369311
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -9428,9 +9430,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1662640981454937093, guid: 7fd7ee6f0865f6f4a9d0f96530890bde,
         type: 3}
+      propertyPath: TalkNPC
+      value: 
+      objectReference: {fileID: 8300000, guid: 851f8ccc74cfa3743be110433c9b92a0, type: 3}
+    - target: {fileID: 1662640981454937093, guid: 7fd7ee6f0865f6f4a9d0f96530890bde,
+        type: 3}
       propertyPath: nameText
       value: 
       objectReference: {fileID: 783174571}
+    - target: {fileID: 1662640981454937093, guid: 7fd7ee6f0865f6f4a9d0f96530890bde,
+        type: 3}
+      propertyPath: typingTime
+      value: 0.02
+      objectReference: {fileID: 0}
     - target: {fileID: 1662640981454937093, guid: 7fd7ee6f0865f6f4a9d0f96530890bde,
         type: 3}
       propertyPath: dialogueText
@@ -9446,6 +9458,11 @@ PrefabInstance:
       propertyPath: dialoguePanel
       value: 
       objectReference: {fileID: 834220726}
+    - target: {fileID: 1662640981454937093, guid: 7fd7ee6f0865f6f4a9d0f96530890bde,
+        type: 3}
+      propertyPath: NPCTimeToSound
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1662640981454937093, guid: 7fd7ee6f0865f6f4a9d0f96530890bde,
         type: 3}
       propertyPath: pene.Array.size

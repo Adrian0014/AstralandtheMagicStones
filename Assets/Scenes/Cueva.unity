@@ -11389,7 +11389,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 202014834}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1041bd458bc18014c87f1975b62ac1d3, type: 3}
   m_Name: 
@@ -11439,7 +11439,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 7
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -11512,6 +11512,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &202014845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202014834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c92efb7f902897b4fb84bd34cd33378f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Llamas: {fileID: 716501176}
+  Barreras: {fileID: 416841132}
+  audioAntorcha: {fileID: 202014841}
+  EncendidoSFX: {fileID: 8300000, guid: 8c6be3fe45bea3140a892e60832fe84c, type: 3}
+  ActivoSFX: {fileID: 8300000, guid: 81d9fb36b2519284b86306f2a503f036, type: 3}
+  AudioPuerta: {fileID: 0}
+  PuertaArriba: {fileID: 0}
 --- !u!1 &202535030
 GameObject:
   m_ObjectHideFlags: 0
@@ -22205,6 +22224,11 @@ PrefabInstance:
       propertyPath: m_Intensity
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 6337151633218310306, guid: e1a00a5092eb2e14ca7764818aa80b21,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6337151633230303614, guid: e1a00a5092eb2e14ca7764818aa80b21,
         type: 3}
       propertyPath: m_IsActive
@@ -22358,7 +22382,7 @@ PrefabInstance:
     - target: {fileID: 6337151634038097706, guid: e1a00a5092eb2e14ca7764818aa80b21,
         type: 3}
       propertyPath: m_TagString
-      value: BigAntorcha
+      value: AntorchaCave
       objectReference: {fileID: 0}
     - target: {fileID: 6337151634111615100, guid: e1a00a5092eb2e14ca7764818aa80b21,
         type: 3}
@@ -22448,7 +22472,7 @@ PrefabInstance:
     - target: {fileID: 8880655110048886833, guid: e1a00a5092eb2e14ca7764818aa80b21,
         type: 3}
       propertyPath: m_TagString
-      value: BigAntorcha
+      value: AntorchaCave
       objectReference: {fileID: 0}
     - target: {fileID: 9094202843579028323, guid: e1a00a5092eb2e14ca7764818aa80b21,
         type: 3}
@@ -28400,7 +28424,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 7
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -40315,7 +40339,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 7
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -40627,7 +40651,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 7
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -40706,27 +40730,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 362769333}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1190983046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1190983044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1041bd458bc18014c87f1975b62ac1d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Llamas: {fileID: 503599950}
-  Puerta: {fileID: 1371409612}
-  activado: 0
-  camaraAntorcha: {fileID: 0}
-  anim: {fileID: 0}
-  AudioPuerta: {fileID: 0}
-  EncendidoSFX: {fileID: 8300000, guid: 8c6be3fe45bea3140a892e60832fe84c, type: 3}
-  ActivoSFX: {fileID: 8300000, guid: 81d9fb36b2519284b86306f2a503f036, type: 3}
-  PuertaArriba: {fileID: 0}
 --- !u!65 &1190983047
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40763,7 +40766,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 7
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -40836,6 +40839,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1190983055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190983044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c92efb7f902897b4fb84bd34cd33378f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Llamas: {fileID: 503599950}
+  Barreras: {fileID: 1371409612}
+  audioAntorcha: {fileID: 1190983051}
+  EncendidoSFX: {fileID: 8300000, guid: 8c6be3fe45bea3140a892e60832fe84c, type: 3}
+  ActivoSFX: {fileID: 8300000, guid: 81d9fb36b2519284b86306f2a503f036, type: 3}
+  AudioPuerta: {fileID: 0}
+  PuertaArriba: {fileID: 0}
 --- !u!1 &1199031386 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6337151633878511038, guid: e1a00a5092eb2e14ca7764818aa80b21,
@@ -40899,7 +40921,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 7
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -40987,7 +41009,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1213838415
 Transform:
   m_ObjectHideFlags: 0
@@ -52567,7 +52589,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 7
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -62543,7 +62565,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 7
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
