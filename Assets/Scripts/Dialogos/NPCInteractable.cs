@@ -17,25 +17,30 @@ public class NPCInteractable : MonoBehaviour
     [SerializeField, TextArea(4,6)]private string[] nameLines;
     [SerializeField, TextArea(4,6)]private string[] secondDialogue;
     public Transform respawnPoint;
-    
-    
-    
-    private AudioSource NPCAudio;
-    public AudioClip TalkNPC;
-   
 
+  //animNPC
+    
     private bool didDialogueStart;
     private int lineIndex;
-    private float typingTime = 0.05f;
+
+    private AudioSource NPCAudio;
+    public AudioClip TalkNPC;
+    [SerializeField]private float typingTime;
+    [SerializeField] private int NPCTimeToSound;
+
+    
+
 
     private Animator animNPC;
 
     void Awake()
     {
         animNPC = GetComponent<Animator>();
+        NPCAudio = GetComponent<AudioSource>();
+        NPCAudio.clip = TalkNPC;
+
         if(Global.ReturnHome == true)
         {
-            Debug.Log("pinga");
             this.gameObject.transform.position = respawnPoint.position;
             this.gameObject.transform.rotation = Quaternion.Euler(0, 90, 0);
             Global.ReturnHome = true;
@@ -45,7 +50,7 @@ public class NPCInteractable : MonoBehaviour
             }
                 
         }
-        NPCAudio = GetComponent<AudioSource>();
+        
     }
     public void Interact()
     {
@@ -76,7 +81,7 @@ public class NPCInteractable : MonoBehaviour
         Time.timeScale = 0;
         Global.PlayerScript = true;
         StartCoroutine(ShowLine());
-        NPCAudio.PlayOneShot(TalkNPC);
+        //NPCAudio.PlayOneShot(TalkNPC);
     }
 
     private void NextDialogueLine()
@@ -118,10 +123,17 @@ public class NPCInteractable : MonoBehaviour
     private IEnumerator ShowLine()
     {
         dialogueText.text = string.Empty;
-        NPCAudio.PlayOneShot(TalkNPC);
+        //NPCAudio.PlayOneShot(TalkNPC);
+        int NPCIndex = 0;
         foreach(char ch in dialogueLines[lineIndex])
         {
             dialogueText.text += ch;
+            if(NPCIndex % NPCTimeToSound == 0)
+            {
+                NPCAudio.Play();
+            }
+            
+            NPCIndex++;
             yield return new WaitForSecondsRealtime(typingTime);
         }
     }

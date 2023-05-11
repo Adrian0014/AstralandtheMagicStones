@@ -46939,7 +46939,7 @@ PrefabInstance:
         type: 3}
       propertyPath: TalkNPC
       value: 
-      objectReference: {fileID: 8300000, guid: 097770f688fb629408dbccbc03315882, type: 3}
+      objectReference: {fileID: 8300000, guid: 9827aa45e1744cd4cb397b85943f3e29, type: 3}
     - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
         type: 3}
       propertyPath: nameText
@@ -46950,6 +46950,11 @@ PrefabInstance:
       propertyPath: dialogueText
       value: 
       objectReference: {fileID: 527764284}
+    - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
+        type: 3}
+      propertyPath: unScaledTime
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 3286766889991887877, guid: b1c7b83cd0ff61441804e496691da026,
         type: 3}
       propertyPath: dialoguePanel

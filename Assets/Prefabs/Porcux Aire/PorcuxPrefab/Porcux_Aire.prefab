@@ -1488,12 +1488,14 @@ MonoBehaviour:
   dialogueText: {fileID: 0}
   nameText: {fileID: 0}
   camaraNPC: {fileID: 4492212144857737918}
-  unScaledTime: 0
+  unScaledTime: 0.2
   dialogueLines: []
   nameLines: []
   secondDialogue: []
   respawnPoint: {fileID: 0}
-  TalkNPC: {fileID: 0}
+  TalkNPC: {fileID: 8300000, guid: 9827aa45e1744cd4cb397b85943f3e29, type: 3}
+  typingTime: 0.02
+  NPCTimeToSound: 5
 --- !u!82 &6096159673224384342
 AudioSource:
   m_ObjectHideFlags: 0
