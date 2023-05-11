@@ -11,6 +11,9 @@ public class InGameMenu : MonoBehaviour
     public GameObject interfazInGame;
     public static InGameMenu Instance;
 
+
+//ME CAGO EN EL PUTO VIAJERO DE MIERDA DE LOS COJONES SU PUTA MADRE QUE PUTO DOLOR DE CABEZA HACER  ALGO PARA ESTE GILIPOLLA ME VA HACer cambiar todo EL PUTO PROYECTO
+
     void Awake() 
     {
         if( Instance != null && Instance != this)
@@ -72,7 +75,6 @@ public class InGameMenu : MonoBehaviour
     }
     public void ReturnLobby()
     {
-        Debug.Log("PaCasa");
         Time.timeScale = 1f;
         Global.PlayerScript = false;
         SceneManager.LoadScene(0);
@@ -80,7 +82,7 @@ public class InGameMenu : MonoBehaviour
 
     public void LevelSelect()
     {
-        Debug.Log("PaCasa");
+        Debug.Log("bmkdnbboz");
         Time.timeScale = 0f;
         Global.PlayerScript = true;
         selectMenuGame.SetActive(true);
