@@ -8,7 +8,7 @@ public class PlayerInteract : MonoBehaviour
     [SerializeField] private GameObject intercativeObject;
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && Global.PauseMenu == true)
+        if (Input.GetKeyDown(KeyCode.E) && Global.PauseMenu == true && Global.WorldLevels == false)
         {
             float interactRange = 2f;
             Collider[] colliderArray = Physics.OverlapSphere (transform.position, interactRange);

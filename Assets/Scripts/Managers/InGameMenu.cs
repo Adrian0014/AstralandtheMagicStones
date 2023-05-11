@@ -36,6 +36,15 @@ public class InGameMenu : MonoBehaviour
                 Pause();
             }
         }
+        
+        if(Global.PauseMenu == true)
+        {
+            Debug.Log("TUS MUERTOS");
+        }
+        if(Global.PauseMenu == false)
+        {
+            Debug.Log("GILIPOLLAs");
+        }
     }
 
     public void ContinuePlay()
@@ -48,6 +57,7 @@ public class InGameMenu : MonoBehaviour
         Global.PlayerScript = false;
         Global.PauseMenu = true;
         Cursor.lockState = CursorLockMode.Locked;
+        Global.WorldLevels = false;
     }
 
     public void Pause()
@@ -76,6 +86,7 @@ public class InGameMenu : MonoBehaviour
         selectMenuGame.SetActive(true);
         interfazInGame.SetActive(false);
         Cursor.lockState = CursorLockMode.Confined;
+        Global.WorldLevels = true;
 
     }
     public void GoldenLevel()
