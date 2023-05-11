@@ -71,8 +71,8 @@ public class InGameMenu : MonoBehaviour
     public void LevelSelect()
     {
         Debug.Log("PaCasa");
-        //Time.timeScale = 0f;
-        //Global.PlayerScript = true;
+        Time.timeScale = 0f;
+        Global.PlayerScript = true;
         selectMenuGame.SetActive(true);
         interfazInGame.SetActive(false);
         Cursor.lockState = CursorLockMode.Confined;

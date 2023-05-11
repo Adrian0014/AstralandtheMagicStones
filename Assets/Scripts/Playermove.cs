@@ -132,12 +132,10 @@ public class Playermove : MonoBehaviour
         {
             if(isGrounded == true)
             {
-                Debug.Log("pito");
                 PlayerAudiowalk.Play();
             }
             if(isGrounded == false)
             {
-                Debug.Log("no");
                 PlayerAudiowalk.Pause();
             }
         }
